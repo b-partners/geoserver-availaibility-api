@@ -52,7 +52,8 @@ class TileDownloader:
                 "srs": "EPSG:3857",
                 "transparent": "true",
                 "service": "WMS",
-                "request": "GetMap"
+                "request": "GetMap",
+                "version": "1.3.0"
             }
             url = requests.get(url=self.geoserver, params=params).url
 
