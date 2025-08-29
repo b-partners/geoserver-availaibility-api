@@ -1,10 +1,9 @@
 import os
+import json
 from datetime import datetime
 import numpy as np
-import json
 from address_converter import convert_address_to_lat_lon, convert_lat_lon_to_xyz_coordinates
 from tile_downloader import TileDownloader
-
 
 def is_img_blank(img):
     if img is None:
@@ -12,23 +11,27 @@ def is_img_blank(img):
     if np.all(img == 0) or np.all(img == 255):
         return "Blank image"
 
-
-def check_geoserver_availability():
+def check_geoserver_availability(page=1, page_size=5):
     dataset = "data.json"
     tile_downloader = TileDownloader()
 
     key = os.getenv("GOOGLE_API_KEY")
     if not key:
-        raise ValueError("GOOGLE API KEY is missing ")
+        raise ValueError("GOOGLE API KEY is missing")
 
     test_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     with open(dataset) as f:
         data = json.load(f)
 
+    # Pagination
+    start_idx = (page - 1) * page_size
+    end_idx = start_idx + page_size
+    paginated_data = data[start_idx:end_idx]
+
     json_result = []
 
-    for department in data:
+    for department in paginated_data:
         address = department["adresse"]
         coordinates = department["coordonnees"]
         z = 20
@@ -70,8 +73,3 @@ def check_geoserver_availability():
         print(f"Processed: {address}, x={x}, y={y}, layers={layer}")
 
     return json_result
-
-
-if __name__ == '__main__':
-    result = check_geoserver_availability()
-    print(json.dumps(result, indent=4, ensure_ascii=False))
