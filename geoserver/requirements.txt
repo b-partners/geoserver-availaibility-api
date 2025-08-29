@@ -2,4 +2,4 @@ requests
 mercantile
 numpy
 pyproj
-opencv-python
+opencv-python-headless
