@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 import numpy as np
 import json
-from adress_converter import convert_address_to_lat_lon, convert_lat_lon_to_xyz_coordinates
+from address_converter import convert_address_to_lat_lon, convert_lat_lon_to_xyz_coordinates
 from tile_downloader import TileDownloader
 
 
