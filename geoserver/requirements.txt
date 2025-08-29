@@ -1,0 +1,5 @@
+requests
+mercantile
+numpy
+pyproj
+opencv-python
