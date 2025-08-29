@@ -1,6 +1,6 @@
 import json
 
-from geoserver.check_availability import check_geoserver_availability
+from check_availability import check_geoserver_availability
 
 
 def lambda_handler(event, context):
