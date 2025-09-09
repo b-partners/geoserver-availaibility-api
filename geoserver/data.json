@@ -236,7 +236,7 @@
     "coordonnees": "None",
     "departement": ["ILE-DE-RE"],
     "region": "Région Nouvelle-Aquitaine",
-    "tiff_ref": ["ile-de-re1_georef.tif", "ile_de_re2_georef.tif", "ile_de_re3_georef.tif", "ile_de_re4_georef.tif", "ile_de_re5_georef.tif"]
+    "tiff_ref": ["ile-de-re1_georef.tif", "ile-de-re2_georef.tif", "ile-de-re3_georef.tif", "ile-de-re4_georef.tif", "ile-de-re5_georef.tif"]
   },
     {
     "adresse": "9GR8+78R Brest, France",
@@ -244,12 +244,6 @@
     "departement": ["FINISTERE_2023_5cm"],
     "region": "Région Bretagne",
     "tiff_ref": "FINISTERE_Brest_2023_5cm_georef.tif"
-  },
-  {
-    "adresse": "52 Av. du Chemin de Mesly, 94000 Créteil, France",
-    "coordonnees": "None",
-    "departement": ["Val-de-Marne_Département_2023_5cm"],
-    "region": "Région Île-de-France"
   },
   {
     "adresse": "2 Rue de Cugnaux, 31300 Toulouse",
