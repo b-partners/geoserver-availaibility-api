@@ -166,6 +166,13 @@
     "tiff_ref": "GIRONDE_Bruges_2023_5cm_georef.tif"
   },
   {
+    "adresse": "8 Avenue du Général de Gaulle, 33520 Bruges",
+    "coordonnees": "522490,377716",
+    "departement": ["GIRONDE_2023_5cm"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "Bordeaux_ORTHO2020_georef.tif"
+  },
+  {
     "adresse": "7 Rue de l'Aubisque, 64000 Pau",
     "coordonnees": "None",
     "departement": ["Pyrénées-Atlantique-Pau_Metropole_2024_5cm"],
@@ -188,7 +195,8 @@
     "adresse": "15 Rue de la République, 82000 Montauban",
     "coordonnees": "528236,381218",
     "departement": ["TARN-ET-GARONNE_2020_5CM"],
-    "region": "Occitanie"
+    "region": "Occitanie",
+    "tiff_ref": "TARN-ET-GARONNE_Montauban_2020_5cm_georef.tif"
   },
   {
     "adresse": "51 Rte de Cugand, 44190 Clisson",
