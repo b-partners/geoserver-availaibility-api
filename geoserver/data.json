@@ -348,6 +348,11 @@
     "departement": ["PCRS"],
     "region": "Région Haut-de-France"
   },{
+    "adresse": "Rue Pol, Beauquesne, Amiens, Somme, Hauts-de-France, Metropolitan France, 80600, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France"
+  },{
     "adresse": "2686 Rte de Baziege la Lauragaise, 31670 Labège, France",
     "coordonnees": "None",
     "departement": ["HAUTE-GARONNE_2022_5cm"],
