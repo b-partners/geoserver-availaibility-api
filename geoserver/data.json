@@ -39,6 +39,12 @@
     "region": "Grand Est"
   },
    {
+    "adresse": "46 Rue Pasteur, 51000 Châlons-en-Champagne, France",
+    "coordonnees": "537012,360297",
+    "departement": ["MARNES_2018_5cm"],
+    "region": "Grand Est"
+  },
+   {
     "adresse": "79 Rue Mazelle, 57000 Metz",
     "coordonnees": "None",
     "departement": ["MOSELLE_METZ_METROPOLE_2022_5CM"],
