@@ -56,14 +56,19 @@
     "region": "Grand Est"
   },
    {
-    "adresse": "46 Rue Pasteur, 51000 Châlons-en-Champagne, France",
+    "adresse": "L'Épine, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51460, France",
     "coordonnees": "537012,360297",
     "departement": ["MARNES_2018_5cm"],
     "region": "Grand Est"
   },
   {
     "adresse": "Villers-le-Château, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51510, France",
-    "coordonnees": "537012,360297",
+    "coordonnees": "None",
+    "departement": ["MARNES_2018_5cm"],
+    "region": "Grand Est"
+  },{
+    "adresse": "D 1, Marson, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51240, France",
+    "coordonnees": "None",
     "departement": ["MARNES_2018_5cm"],
     "region": "Grand Est"
   },
@@ -80,12 +85,6 @@
     "departement": ["Meurthe-et-moselle_Grand-Nancy_2023_5cm"],
     "region": "Grand Est",
     "tiff_ref": "Nancy_2023_5cm_L93_georef.tif"
-  },
-  {
-    "adresse": "Cité Du Parc, 50 Rue Du Soleil, Gluck, 68200 Mulhouse, France",
-    "coordonnees": "None",
-    "departement": ["Haut_Rhin_2024_8cm"],
-    "region": "Grand Est"
   },
   {
     "adresse": "12 Boulevard de la Croisette, 06400 Cannes",
@@ -149,6 +148,12 @@
   },
   {
     "adresse": "76000 Rouen, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Normandie"
+  },
+  {
+    "adresse": "Route Forestière des Coteaux, Canteleu, Rouen, Seine-Maritime, Normandy, Metropolitan France, 76380, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Normandie"
@@ -240,7 +245,7 @@
     "departement": ["PCRS"],
     "region": "Occitanie"
   },{
-    "adresse": "AFPA Carcassonne, Rue Charles Baudelaire, Cité Saint-Jaques, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "adresse": "D 104, La Condamine, Verzeille, Carcassonne, Aude, Occitania, Metropolitan France, 11250, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Occitanie"
