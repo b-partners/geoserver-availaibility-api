@@ -20,7 +20,18 @@
     "region": "Bretagne"
   },
   {
+    "adresse": "Campus de Ker Lann, Avenue Robert Schumann, La Croix Madame, Bruz, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35170, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne"
+  },
+  {
     "adresse": "13 Rue Honoré Daumier, 56000 Vannes",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne"
+  }, {
+    "adresse": "Rue Winston Churchill, Le Racquer, Kercado, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Bretagne"
@@ -39,7 +50,19 @@
     "region": "Grand Est"
   },
    {
+    "adresse": "Autoroute des Anglais, Cauroy-lès-Hermonville, Reims, Marne, Grand Est, Metropolitan France, 51220, France",
+    "coordonnees": "None",
+    "departement": ["MARNES_2018_5cm"],
+    "region": "Grand Est"
+  },
+   {
     "adresse": "46 Rue Pasteur, 51000 Châlons-en-Champagne, France",
+    "coordonnees": "537012,360297",
+    "departement": ["MARNES_2018_5cm"],
+    "region": "Grand Est"
+  },
+  {
+    "adresse": "Villers-le-Château, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51510, France",
     "coordonnees": "537012,360297",
     "departement": ["MARNES_2018_5cm"],
     "region": "Grand Est"
@@ -79,6 +102,16 @@
   },
   {
     "adresse": "Mas de la Chassagnette, D36 Route Sambuc, 13200 Arles, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud"
+  },{
+    "adresse": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud"
+  },{
+    "adresse": "Villeneuve, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Grand Sud"
@@ -190,9 +223,29 @@
     "coordonnees": "None",
     "departement": ["HERAULT_2020_5cm"],
     "region": "Occitanie"
+  },{
+    "adresse": "Pole Sud Immobilier, 103, Boulevard de la Liberté, Béziers, Hérault, Occitania, Metropolitan France, 34500, France",
+    "coordonnees": "None",
+    "departement": ["HERAULT_2020_5cm"],
+    "region": "Occitanie"
+  },{
+    "adresse": "MECS Jean Gailhac, 38, Boulevard d'Angleterre, Rebaut le Bas, Béziers, Hérault, Occitania, Metropolitan France, 34500, France",
+    "coordonnees": "None",
+    "departement": ["HERAULT_2020_5cm"],
+    "region": "Occitanie"
   },
    {
     "adresse": "4 Rue Jacques Louis David, 11000 Carcassonne",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie"
+  },{
+    "adresse": "AFPA Carcassonne, Rue Charles Baudelaire, Cité Saint-Jaques, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie"
+  },{
+    "adresse": "Route Minervoise, Bouriac, Montredon, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Occitanie"
