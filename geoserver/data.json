@@ -17,7 +17,8 @@
     "adresse": "63 Bd Jean Mermoz, 35136 Saint-Jacques-de-la-Lande",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Bretagne"
+    "region": "Bretagne",
+    "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
     "adresse": "Rue Winston Churchill, Le Racquer, Kercado, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
     "coordonnees": "None",
@@ -92,17 +93,8 @@
     "adresse": "Mas de la Chassagnette, D36 Route Sambuc, 13200 Arles, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Grand Sud"
-  },{
-    "adresse": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Grand Sud"
-  },{
-    "adresse": "Villeneuve, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Grand Sud"
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
   },
   {
     "adresse": "8 rue puget 75018 Paris",
@@ -234,17 +226,8 @@
     "adresse": "4 Rue Jacques Louis David, 11000 Carcassonne",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Occitanie"
-  },{
-    "adresse": "D 104, La Condamine, Verzeille, Carcassonne, Aude, Occitania, Metropolitan France, 11250, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Occitanie"
-  },{
-    "adresse": "Route Minervoise, Bouriac, Montredon, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Occitanie"
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
   },
   {
     "adresse": "15 Rue de la République, 82000 Montauban",
