@@ -14,10 +14,64 @@
     "tiff_ref": "Dijon_2022_MAJ_2024_5cm_georef.tif"
   },
   {
-    "adresse": "63 Bd Jean Mermoz, 35136 Saint-Jacques-de-la-Lande",
+    "adresse": "Porte de Saint-Malo, Les Trois Épines, La Victoire, La Boutière, Saint-Grégoire, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35760, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Bretagne",
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  },{
+    "adresse": "N 12, La Lande du Breil, Villejean - Beauregard, Quartiers Nord-Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35921, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "Rocade Est, Les Gayeulles, Le Horel, Quartiers Nord-Est, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  },{
+    "adresse": "La Touche Martin, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "La Touche Martin, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "Rocade Est, Le Bois de Laval, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "N 157, Le Pas Hamon, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  },{
+    "adresse": "Sainte-Élisabeth, Le Blosne, Quartiers Sud-Est, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "11, Square Louis et Maurice de Broglie, Cleunay, Cleunay - Arsenal-Redon, Quartiers Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35136, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  }, {
+    "adresse": "Porte de Bréquigny, Le Bois Harel, Châtillon-sur-Seiche, Quartiers Sud-Ouest, Noyal-Châtillon-sur-Seiche, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35230, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
     "adresse": "Rue Winston Churchill, Le Racquer, Kercado, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
