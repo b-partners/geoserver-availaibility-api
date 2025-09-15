@@ -68,7 +68,55 @@
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
-    "adresse": "Rue Winston Churchill, Le Racquer, Kercado, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
+    "adresse": "Route du Pont du Roch, Pont du Roc'h, Ploeren, Vannes, Morbihan, Brittany, Metropolitan France, 56880, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Voie Verte Vannes - Sainte-Anne-d'Auray, Goah Moustoir, Plescop, Vannes, Morbihan, Brittany, Metropolitan France, 56890, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Route de Kerizouët, Le Moulin de Bot-Lann, Plescop, Vannes, Morbihan, Brittany, Metropolitan France, 56890, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Rue du Traité de Beauregard, Liscuit, Saint-Avé, Vannes, Morbihan, Brittany, Metropolitan France, 56890, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Voie Express de Vannes à Ploërmel, Le Varech, Kerglas, Saint-Nolff, Vannes, Morbihan, Brittany, Metropolitan France, 56250, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Voie Express de Nantes à Brest, Nord-Est, Theix, Theix-Noyalo, Vannes, Morbihan, Brittany, Metropolitan France, 56450, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Complexe Sportif de Cano, Rue du Clos Melin, Kercourse, Séné, Vannes, Morbihan, Brittany, Metropolitan France, 56860, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Chemin de Kerbourbon, Kerbourbon, Sud-Est, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
+  },{
+    "adresse": "Route de Roguedas, Keravélo, Arradon, Vannes, Morbihan, Brittany, Metropolitan France, 56610, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Bretagne",
@@ -138,7 +186,55 @@
     "tiff_ref": "cannes_2024_georef.tif"
   },
   {
-    "adresse": "Mas de la Chassagnette, D36 Route Sambuc, 13200 Arles, France",
+    "adresse": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "Getback Escape Game, 14, Rue Joseph Rainard, Site Industriel et Portuaire d'Arles, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "D 573, Saint-Hippolyte, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "D 24, Clos Magali, Mas-Thibert, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "La Capelière, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "D 37, Saintes-Maries-de-la-Mer, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13460, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "Saintes-Maries-de-la-Mer, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13460, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Grand Sud",
+    "tiff_ref": "arles-pcrs_georef.tif"
+  },{
+    "adresse": "Route des Saintes-Maries, Albaron, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Grand Sud",
@@ -295,7 +391,121 @@
     "region": "Occitanie"
   },
    {
-    "adresse": "4 Rue Jacques Louis David, 11000 Carcassonne",
+    "adresse": "Le Bois de Serres, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Rocade Nord, Domaine de Nore, Cucurlis, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Rue Yves de Kerguelen, Zone commerciale du Pont Rouge, Montredon, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6113, Montredon, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6113, Saint-Jacques de la Conte, Montredon, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "les Vignes Rouges, Montlegun, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6161, Saint-Joseph, Montlegun, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6161, Cité Ozanam, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Cité Ozanam, Montlegun, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Route de Cazilhac, la Barbacanne, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6161, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Golf de Carcassonne, D 104, Auriac, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 6161, Le Viguier, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "D 118, Cité Le Viguier, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Route de Limoux, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "22, Rue André Derain, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Zone d'activité économique La Ferraudière, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "4, Rue Jean Antoine Chaptal, Zone d'activité économique La Ferraudière, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
+    "tiff_ref": "carcassonne-pcrs_georef.tif"
+  },{
+    "adresse": "Route de Bram, Zone d'activité économique La Ferraudière, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Occitanie",
