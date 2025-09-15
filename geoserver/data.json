@@ -38,12 +38,6 @@
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
-    "adresse": "La Touche Martin, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Ille-et-vilaine",
-    "tiff_ref": "rennes-pcrs_georef.tif"
-  }, {
     "adresse": "Rocade Est, Le Bois de Laval, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
@@ -56,7 +50,7 @@
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   },{
-    "adresse": "Sainte-Élisabeth, Le Blosne, Quartiers Sud-Est, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35200, France",
+    "adresse": "5 ter, Le Hil, Chantepie, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35135, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Ille-et-vilaine",
@@ -68,7 +62,7 @@
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
-    "adresse": "Porte de Bréquigny, Le Bois Harel, Châtillon-sur-Seiche, Quartiers Sud-Ouest, Noyal-Châtillon-sur-Seiche, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35230, France",
+    "adresse": "La Chaîne, Châtillon-sur-Seiche, Noyal-Châtillon-sur-Seiche, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35230, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Ille-et-vilaine",
@@ -207,14 +201,38 @@
     "region": "Nouvelle-Aquitaine"
   },
   {
-    "adresse": "1 Rue de la Vau Saint-Jacques, 79200 Parthenay, France",
+    "adresse": "Les Hautes Merlatières, Cerizay, Bressuire, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79140, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Nouvelle-Aquitaine",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },
   {
-    "adresse": "17 Rue Geneviève Fauconnier, 86000 Poitiers",
+    "adresse": "Saint-Jean-de-Thouars, Bressuire, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79100, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
+  },{
+    "adresse": "Route de la Roche Posay, Le Bourg, Les Fosses Berthier, Yzeures-sur-Creuse, Loches, Indre-et-Loire, Centre-Val de Loire, Metropolitan France, 37290, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
+  },{
+    "adresse": "D 111, Le Pradeau, Nérignac, Montmorillon, Vienne, Nouvelle-Aquitaine, Metropolitan France, 86150, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
+  },{
+    "adresse": "29, Route d'Argentière, Les Chaumes, Prailles, Prailles-la-Couarde, Niort, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79370, France",
+    "coordonnees": "None",
+    "departement": ["PCRS"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
+  },{
+    "adresse": "Cenan, Saint-Pompain, Parthenay, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79160, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Nouvelle-Aquitaine",
