@@ -18,23 +18,12 @@
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Bretagne"
-  },
-  {
-    "adresse": "Campus de Ker Lann, Avenue Robert Schumann, La Croix Madame, Bruz, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35170, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Bretagne"
-  },
-  {
-    "adresse": "13 Rue Honoré Daumier, 56000 Vannes",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Bretagne"
   }, {
     "adresse": "Rue Winston Churchill, Le Racquer, Kercado, Vannes, Morbihan, Brittany, Metropolitan France, 56000, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Bretagne"
+    "region": "Bretagne",
+    "tiff_ref": "vannes-pcrs_georef.tif"
   },
   {
     "adresse": "2 Quai des Pêcheurs, 67500 Haguenau, France",
@@ -175,13 +164,15 @@
     "adresse": "1 Rue de la Vau Saint-Jacques, 79200 Parthenay, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine"
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },
   {
     "adresse": "17 Rue Geneviève Fauconnier, 86000 Poitiers",
     "coordonnees": "None",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine"
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },
   {
     "adresse": "Bd de Beaublanc, 87100 Limoges, France",
@@ -330,12 +321,6 @@
     "departement": ["HAUTE-SAVOIE_2023_5CM"],
     "region": "Région Auvergne-Rhône-Alpes",
     "tiff_ref": "HAUTE-SAVOIE_Annecy_2023_5cm_georef.tif"
-  },
-  {
-    "adresse": "Rue de la Monnaie, 35000 Rennes, France",
-    "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_Département_2023_5cm"],
-    "region": "Région Île-de-France"
   },
   {
     "adresse": "180, Rue Paulette Besson, Joppet, Chambéry, Savoy, Auvergne-Rhône-Alpes, Metropolitan France, 73000, France",
