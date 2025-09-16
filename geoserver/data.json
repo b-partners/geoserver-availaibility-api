@@ -295,43 +295,41 @@
     "coordonnees": "None",
     "departement": ["PCRS"],
     "region": "Nouvelle-Aquitaine"
-  },
-  {
-    "adresse": "Les Hautes Merlatières, Cerizay, Bressuire, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79140, France",
-    "coordonnees": "None",
+  },{
+    "adresse": "C93G+QGP Saint-Pompain, France",
+    "coordonnees": "522471,371341",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
-    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
-  },
-  {
-    "adresse": "Saint-Jean-de-Thouars, Bressuire, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79100, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
+    "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },{
-    "adresse": "Route de la Roche Posay, Le Bourg, Les Fosses Berthier, Yzeures-sur-Creuse, Loches, Indre-et-Loire, Centre-Val de Loire, Metropolitan France, 37290, France",
-    "coordonnees": "None",
+    "adresse": "R8M7+QQG Cerizay, France",
+    "coordonnees": "522291,369517",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
+    "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },{
-    "adresse": "D 111, Le Pradeau, Nérignac, Montmorillon, Vienne, Nouvelle-Aquitaine, Metropolitan France, 86150, France",
-    "coordonnees": "None",
+    "adresse": "XQ5V+GW9 Saint-Jean-de-Thouars, France",
+    "coordonnees": "523690,368987",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
+    "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },{
-    "adresse": "29, Route d'Argentière, Les Chaumes, Prailles, Prailles-la-Couarde, Niort, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79370, France",
-    "coordonnees": "None",
+    "adresse": "QVP6+RGR Yzeures-sur-Creuse, France",
+    "coordonnees": "526796,369719",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
+    "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },{
-    "adresse": "Cenan, Saint-Pompain, Parthenay, Deux-Sèvres, Nouvelle-Aquitaine, Metropolitan France, 79160, France",
-    "coordonnees": "None",
+    "adresse": "8P3J+H3X Persac, France",
+    "coordonnees": "526414,371765",
     "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine",
+    "region": "Occitanie",
+    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
+  },{
+    "adresse": "8QPR+MF9 Prailles-La Couarde, France",
+    "coordonnees": "523679,371627",
+    "departement": ["PCRS"],
+    "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },
   {
