@@ -314,12 +314,6 @@
     "region": "Occitanie",
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },{
-    "adresse": "QVP6+RGR Yzeures-sur-Creuse, France",
-    "coordonnees": "526796,369719",
-    "departement": ["PCRS"],
-    "region": "Occitanie",
-    "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
-  },{
     "adresse": "8P3J+H3X Persac, France",
     "coordonnees": "526414,371765",
     "departement": ["PCRS"],
@@ -593,12 +587,6 @@
   },{
     "adresse": "8X7C+56P Raye-sur-Authie, France",
     "coordonnees": "530027, 354196",
-    "departement": ["PCRS"],
-    "region": "Région Haut-de-France",
-    "tiff_ref": "haut-de-france_georef.tif"
-  },{
-    "adresse": "VG3H+VM2 Fallencourt, France",
-    "coordonnees": "528741, 356276",
     "departement": ["PCRS"],
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
