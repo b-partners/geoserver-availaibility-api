@@ -584,17 +584,36 @@
     "departement": ["HAUTE-SAVOIE_2023_5CM"],
     "region": "Région Auvergne-Rhône-Alpes",
     "tiff_ref": "HAUTE-SAVOIE_Annecy_2023_5cm_georef.tif"
-  },
-  {
-    "adresse": "180, Rue Paulette Besson, Joppet, Chambéry, Savoy, Auvergne-Rhône-Alpes, Metropolitan France, 73000, France",
-    "coordonnees": "None",
-    "departement": ["SAVOIE_2024_5CM"],
-    "region": "Région Auvergne-Rhône-Alpes"
   },{
-    "adresse": "Mairie d'Hérissart, 10, Rue des Écoles, Hérissart, Péronne, Somme, Hauts-de-France, Metropolitan France, 80260, France",
-    "coordonnees": "None",
+    "adresse": "8QMV+97Q Roclincourt, France",
+    "coordonnees": "532423,354102",
     "departement": ["PCRS"],
-    "region": "Région Haut-de-France"
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
+  },{
+    "adresse": "8X7C+56P Raye-sur-Authie, France",
+    "coordonnees": "530027, 354196",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
+  },{
+    "adresse": "VG3H+VM2 Fallencourt, France",
+    "coordonnees": "528741, 356276",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
+  },{
+    "adresse": "935M+55G Berneuil-en-Bray, France",
+    "coordonnees": "530354, 358509",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
+  },{
+    "adresse": "3FC7+H9J Honnechy, France",
+    "coordonnees": "533160, 358579",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
   },{
     "adresse": "Rue Pol, Beauquesne, Amiens, Somme, Hauts-de-France, Metropolitan France, 80600, France",
     "coordonnees": "None",
