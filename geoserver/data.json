@@ -98,12 +98,6 @@
     "region": "Bretagne",
     "tiff_ref": "vannes-pcrs_georef.tif"
   },{
-    "adresse": "Voie Express de Nantes à Brest, Nord-Est, Theix, Theix-Noyalo, Vannes, Morbihan, Brittany, Metropolitan France, 56450, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Bretagne",
-    "tiff_ref": "vannes-pcrs_georef.tif"
-  },{
     "adresse": "Complexe Sportif de Cano, Rue du Clos Melin, Kercourse, Séné, Vannes, Morbihan, Brittany, Metropolitan France, 56860, France",
     "coordonnees": "None",
     "departement": ["PCRS"],
@@ -599,6 +593,12 @@
   },{
     "adresse": "3FC7+H9J Honnechy, France",
     "coordonnees": "533160, 358579",
+    "departement": ["PCRS"],
+    "region": "Région Haut-de-France",
+    "tiff_ref": "haut-de-france_georef.tif"
+  },{
+    "adresse": "VG3H+VM2 Fallencourt",
+    "coordonnees": "528741,56276",
     "departement": ["PCRS"],
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
