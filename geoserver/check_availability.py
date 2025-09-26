@@ -46,6 +46,7 @@ def check_geoserver_availability(page=1, page_size=5, max_workers=10):
 
             image, processing_time, url = tile_downloader.download(y, x, z, "geoserver", layer)
             reason = is_img_blank(image)
+            print(f"{url}")
             availability = "KO" if reason else "OK"
         except Exception as e:
             availability = "KO"
