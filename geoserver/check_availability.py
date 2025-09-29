@@ -80,7 +80,5 @@ def check_geoserver_availability(page=1, page_size=5, max_workers=10, dataset='d
         for future in as_completed(futures):
             result = future.result()
             results.append(result)
-            print(f"Processed: {result['address']}, x={result['position']['x']}, "
-                  f"y={result['position']['y']}, layer={result['department']}")
 
     return results

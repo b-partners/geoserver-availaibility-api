@@ -16,9 +16,10 @@ def lambda_handler(event, context):
     elif path.endswith("/geoserver-layers"):
         page = int(query_params.get("page", 1))
         page_size = int(query_params.get("page_size", 29))
+        availability = str(query_params.get("availability", "OK"))
         dataset = "layer-list.json"
         result = check_geoserver_availability(page=page, page_size=page_size, dataset=dataset)
-        result = [item for item in result if item.get("availability") == "OK"]
+        result = [item for item in result if item.get("availability") == availability]
 
     else:
         return {

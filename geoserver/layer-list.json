@@ -7,6 +7,13 @@
     "tiff_ref": "RHONE_LYON_2023_georef.tif"
   },
   {
+    "adresse": "2 Place Bellecour, 69002 Lyon",
+    "coordonnees": "538359,374052",
+    "departement": ["RHONE_2018_5CM"],
+    "region": "Auvergne-Rhône-Alpes",
+    "tiff_ref": "RHONE_LYON_2023_georef.tif"
+  },
+  {
     "adresse": "6 Place de la Libération, 21000 Dijon",
     "coordonnees": "538969,367435",
     "departement": ["COTE_D_OR_2024_5cm"],
@@ -59,12 +66,6 @@
     "departement": ["ALPES-MARITIMES_2024_5cm"],
     "region": "Grand Sud",
     "tiff_ref": "cannes_2024_georef.tif"
-  },
-  {
-    "adresse": "8 rue puget 75018 Paris",
-    "coordonnees": "None",
-    "departement": ["IGN_PHOTO_AERIENNE"],
-    "region": "Île-de-France"
   },
   {
     "adresse": "Chemin de la Fromagerie, Le Mesnil-Durand, Livarot-Pays-d'Auge, Lisieux, Calvados, Normandy, Metropolitan France, 14140, France",
@@ -189,10 +190,5 @@
     "departement": ["HAUTE-SAVOIE_2023_5CM"],
     "region": "Région Auvergne-Rhône-Alpes",
     "tiff_ref": "HAUTE-SAVOIE_Annecy_2023_5cm_georef.tif"
-  },{
-    "adresse": "2686 Rte de Baziege la Lauragaise, 31670 Labège, France",
-    "coordonnees": "None",
-    "departement": ["HAUTE-GARONNE_2022_5cm"],
-    "region": "Région Haute-Garonne"
   }
 ]
