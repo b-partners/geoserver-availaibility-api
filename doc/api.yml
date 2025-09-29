@@ -1,0 +1,85 @@
+openapi: 3.0.3
+
+info:
+  title: Geoserver Availability API
+  version: 'latest'
+
+servers:
+  - url: 'https://e6kk7nfz5eoh7c6yenacxz6bi40qazmq.lambda-url.eu-west-3.on.aws/'
+
+paths:
+  /geoserver-availability:
+    get:
+      operationId: getGeoserverAvailability
+      summary: Get the availability of geoserver layers
+      tags:
+        - Geoserver
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+          required: false
+          description: Page number for pagination (default = 1).
+        - in: query
+          name: page_size
+          schema:
+            type: integer
+          required: false
+          description: Number of results per page (default = 5).
+      responses:
+        '200':
+          description: List of layers availability
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/LayersAvailability'
+
+components:
+  schemas:
+    LayersAvailability:
+      type: object
+      properties:
+        department:
+          type: string
+          example: "PCRS.LAMB93"
+        address:
+          type: string
+          example: "N 12, La Lande du Breil, Villejean - Beauregard, Rennes, France"
+        position:
+          type: object
+          properties:
+            x:
+              type: number
+              example: 519279
+            y:
+              type: number
+              example: 363951
+            z:
+              type: number
+              example: 20
+        availability:
+          type: string
+          enum: [OK, KO]
+          example: "OK"
+        reason:
+          type: string
+          nullable: true
+          example: null
+        tiff_ref:
+          type: string
+          example: "rennes-pcrs_georef.tif"
+        test_date:
+          type: string
+          format: date-time
+          example: "2025-09-29 13:40:54"
+        url:
+          type: string
+          format: uri
+          example: "http://35.181.83.111/geoserver/cite/wms?layers=PCRS.LAMB93&format=image%2Fjpeg&width=1024&height=1024&bbox=-191436.5373402239%2C6127803.683566009%2C-191398.31882608135%2C6127841.902080151&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0"
+        processing_time:
+          type: number
+          format: float
+          example: 0.8
