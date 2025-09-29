@@ -28,6 +28,11 @@ Resources:
           Properties:
             Path: /geoserver-availability
             Method: get
+        GeoserverLayerCheck:
+          Type: Api
+          Properties:
+            Path: /geoserver-layers
+            Method: get
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: ./geoserver

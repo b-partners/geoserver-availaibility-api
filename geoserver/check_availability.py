@@ -16,8 +16,7 @@ def is_img_blank(img):
     return None
 
 
-def check_geoserver_availability(page=1, page_size=5, max_workers=10):
-    dataset = "data.json"
+def check_geoserver_availability(page=1, page_size=5, max_workers=10, dataset='data.json'):
     tile_downloader = TileDownloader()
 
     key = os.getenv("GOOGLE_API_KEY")

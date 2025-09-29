@@ -1,0 +1,198 @@
+[
+  {
+    "adresse": "2 Place Bellecour, 69002 Lyon",
+    "coordonnees": "538359,374052",
+    "departement": ["RHONE_2023_5CM"],
+    "region": "Auvergne-Rhône-Alpes",
+    "tiff_ref": "RHONE_LYON_2023_georef.tif"
+  },
+  {
+    "adresse": "6 Place de la Libération, 21000 Dijon",
+    "coordonnees": "538969,367435",
+    "departement": ["COTE_D_OR_2024_5cm"],
+    "region": "Bourgogne Franche Comte",
+    "tiff_ref": "Dijon_2022_MAJ_2024_5cm_georef.tif"
+  },
+  {
+    "adresse": "Porte de Saint-Malo, Les Trois Épines, La Victoire, La Boutière, Saint-Grégoire, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35760, France",
+    "coordonnees": "None",
+    "departement": ["PCRS.LAMB93"],
+    "region": "Ille-et-vilaine",
+    "tiff_ref": "rennes-pcrs_georef.tif"
+  },
+  {
+    "adresse": "2 Quai des Pêcheurs, 67500 Haguenau, France",
+    "coordonnees": "546992,360926",
+    "departement": ["Bas-Rhin_2023_5cm"],
+    "region": "Grand Est",
+    "tiff_ref": "Haguenau_CAH-ORTHO_PCRS_JUIN_2023_georef.tif"
+  },
+   {
+    "adresse": "L'Épine, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51460, France",
+    "coordonnees": "537012,360297",
+    "departement": ["MARNES_2018_5cm"],
+    "region": "Grand Est"
+  },
+   {
+    "adresse": "79 Rue Mazelle, 57000 Metz",
+    "coordonnees": "None",
+    "departement": ["MOSELLE_METZ_METROPOLE_2022_5CM"],
+    "region": "Grand Est",
+     "tiff_ref": "metz_ortho_2024_georef.tif"
+  },
+   {
+    "adresse": "38 Rue Sergent Blandan, 54000 Nancy, France",
+    "coordonnees": "542248,361518",
+    "departement": ["Meurthe-et-moselle_Grand-Nancy_2023_5cm"],
+    "region": "Grand Est",
+    "tiff_ref": "Nancy_2023_5cm_L93_georef.tif"
+  },
+  {
+    "adresse": "12 Boulevard de la Croisette, 06400 Cannes",
+    "coordonnees": "544737,383094",
+    "departement": ["ALPES-MARITIMES_2020_5cm"],
+    "region": "Grand Sud",
+    "tiff_ref": "cannes_2024_georef.tif"
+  },{
+    "adresse": "12 Boulevard de la Croisette, 06400 Cannes",
+    "coordonnees": "544737,383094",
+    "departement": ["ALPES-MARITIMES_2024_5cm"],
+    "region": "Grand Sud",
+    "tiff_ref": "cannes_2024_georef.tif"
+  },
+  {
+    "adresse": "8 rue puget 75018 Paris",
+    "coordonnees": "None",
+    "departement": ["IGN_PHOTO_AERIENNE"],
+    "region": "Île-de-France"
+  },
+  {
+    "adresse": "Chemin de la Fromagerie, Le Mesnil-Durand, Livarot-Pays-d'Auge, Lisieux, Calvados, Normandy, Metropolitan France, 14140, France",
+    "coordonnees": "None",
+    "departement": ["Ortho_Lisieux_Normandie_2022"],
+    "region": "Normandie",
+    "tiff_ref": "Ortho_Lisieux_Normandie_2022_georef.tif"
+  },
+  {
+    "adresse": "110 Rue de la Duché, 50100 Cherbourg-en-Cotentin, France",
+    "coordonnees": "None",
+    "departement": ["MANCHE_2021_5CM"],
+    "region": "Normandie",
+    "tiff_ref": "Normandie_OrthoHR_EVC_0m05_WGS84_2021_CAC_georef.tif"
+  },
+  {
+    "adresse": "4 Chez Brard, 16330 Vars, France",
+    "coordonnees": "524765,374065",
+    "departement": ["CHARENTE_2019_5cm"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "Grand-Angouleme_georef.tif"
+  },
+  {
+    "adresse": "8 Avenue du Général de Gaulle, 33520 Bruges",
+    "coordonnees": "522490,377716",
+    "departement": ["GIRONDE_2023_5cm"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "GIRONDE_Bruges_2023_5cm_georef.tif"
+  },
+  {
+    "adresse": "8 Avenue du Général de Gaulle, 33520 Bruges",
+    "coordonnees": "522490,377716",
+    "departement": ["GIRONDE_2023_5cm"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": "Bordeaux_ORTHO2020_georef.tif"
+  },
+  {
+    "adresse": "7 Rue de l'Aubisque, 64000 Pau",
+    "coordonnees": "None",
+    "departement": ["Pyrénées-Atlantique-Pau_Metropole_2024_5cm"],
+    "region": "Nouvelle-Aquitaine",
+    "tiff_ref": ""
+  },
+  {
+    "adresse": "97J6+5RH Boujan-sur-Libron, France",
+    "coordonnees": "None",
+    "departement": ["HERAULT_2020_5cm"],
+    "region": "Occitanie"
+  },
+  {
+    "adresse": "15 Rue de la République, 82000 Montauban",
+    "coordonnees": "528236,381218",
+    "departement": ["TARN-ET-GARONNE_2020_5CM"],
+    "region": "Occitanie",
+    "tiff_ref": "TARN-ET-GARONNE_Montauban_2020_5cm_georef.tif"
+  },
+  {
+    "adresse": "51 Rte de Cugand, 44190 Clisson",
+    "coordonnees": "None",
+    "departement": ["Loire-Atlantique_Clisson_Sevre_Maine_2020_5cm"],
+    "region": "Pays de la loire"
+  },
+  {
+    "adresse": "27 Rue Édouard Vaillant, 37000 Tours, France",
+    "coordonnees": "526319,367152",
+    "departement": ["INDRE_ET_LOIRE_2024_5CM"],
+    "region": "Région Centre",
+    "tiff_ref": "Indre_et_loire_TPK_Tours_AGOL_L11_L21_georef.tif"
+  },
+  {
+    "adresse": "362 Rue Faventines, 26000 Valence, France",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_All_Region_5cm"],
+    "region": "Région Centre",
+    "tiff_ref": "valence_optimized_georef.tif"
+  },
+  {
+    "adresse": "19100 Brive-la-Gaillarde, France",
+    "coordonnees": "None",
+    "departement": ["Correze"],
+    "region": "Région Centre",
+    "tiff_ref": "brive_global_jpeg_georef.tif"
+  },
+  {
+    "adresse": "11 Bd René Lévesque, 85000 La Roche-sur-Yon, France",
+    "coordonnees": "None",
+    "departement": ["VENDEE_2025"],
+    "region": "Région Centre",
+    "tiff_ref": "vendee_pcrs85_3947_georef.tif"
+  },
+   {
+    "adresse": "16 Cloître Notre Dame, 28000 Chartres, France",
+    "coordonnees": "None",
+    "departement": ["Eur_Et_Loir_Chartres"],
+    "region": "Région Centre",
+    "tiff_ref": "chartres_georef.tif"
+  },
+  {
+    "adresse": "Rte de Radia, 17590 Ars-en-Ré, France",
+    "coordonnees": "None",
+    "departement": ["ILE-DE-RE"],
+    "region": "Région Nouvelle-Aquitaine",
+    "tiff_ref": ["ile-de-re1_georef.tif", "ile-de-re2_georef.tif", "ile-de-re3_georef.tif", "ile-de-re4_georef.tif", "ile-de-re5_georef.tif"]
+  },
+    {
+    "adresse": "9GR8+78R Brest, France",
+    "coordonnees": "None",
+    "departement": ["FINISTERE_2023_5cm"],
+    "region": "Région Bretagne",
+    "tiff_ref": "FINISTERE_Brest_2023_5cm_georef.tif"
+  },
+  {
+    "adresse": "2 Rue de Cugnaux, 31300 Toulouse",
+    "coordonnees": "None",
+    "departement": ["HAUTE-GARONNE_2022_5cm"],
+    "region": "Région Occitanie",
+    "tiff_ref": "TOULOUSE_ORT_2024_5cm_georef.tif"
+  },
+  {
+    "adresse": "W44F+7FM Annecy, France",
+    "coordonnees": "None",
+    "departement": ["HAUTE-SAVOIE_2023_5CM"],
+    "region": "Région Auvergne-Rhône-Alpes",
+    "tiff_ref": "HAUTE-SAVOIE_Annecy_2023_5cm_georef.tif"
+  },{
+    "adresse": "2686 Rte de Baziege la Lauragaise, 31670 Labège, France",
+    "coordonnees": "None",
+    "departement": ["HAUTE-GARONNE_2022_5cm"],
+    "region": "Région Haute-Garonne"
+  }
+]
