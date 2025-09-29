@@ -2,7 +2,7 @@ import json
 from check_availability import check_geoserver_availability
 
 def lambda_handler(event, context):
-    path = event.get("path", "/geoserver-availability")
+    path = event.get("rawPath", "/geoserver-availability")
     print(event)
     query_params = event.get("queryStringParameters") or {}
     print(f"Path={path}")
