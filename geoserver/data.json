@@ -5,6 +5,12 @@
     "departement": ["RHONE_2023_5CM"],
     "region": "Auvergne-Rhône-Alpes",
     "tiff_ref": "RHONE_LYON_2023_georef.tif"
+  },{
+    "adresse": "2 Place Bellecour, 69002 Lyon",
+    "coordonnees": "538359,374052",
+    "departement": ["RHONE_2018_5CM"],
+    "region": "Auvergne-Rhône-Alpes",
+    "tiff_ref": "RHONE_LYON_2023_georef.tif"
   },
   {
     "adresse": "6 Place de la Libération, 21000 Dijon",
@@ -44,12 +50,6 @@
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
-    "adresse": "N 157, Le Pas Hamon, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Ille-et-vilaine",
-    "tiff_ref": "rennes-pcrs_georef.tif"
-  },{
     "adresse": "5 ter, Le Hil, Chantepie, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35135, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
@@ -211,18 +211,6 @@
     "tiff_ref": "arles-pcrs_georef.tif"
   },{
     "adresse": "La Capelière, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Grand Sud",
-    "tiff_ref": "arles-pcrs_georef.tif"
-  },{
-    "adresse": "D 37, Saintes-Maries-de-la-Mer, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13460, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Grand Sud",
-    "tiff_ref": "arles-pcrs_georef.tif"
-  },{
-    "adresse": "Saintes-Maries-de-la-Mer, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13460, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
     "region": "Grand Sud",
@@ -612,5 +600,118 @@
     "coordonnees": "None",
     "departement": ["HAUTE-GARONNE_2022_5cm"],
     "region": "Région Haute-Garonne"
+  },{
+    "adresse": "1-2 Rue du Friscaty, 57100 Thionville, France",
+    "coordonnees": "None",
+    "departement": ["Thionville_2021_5cm"]
+  },{
+    "adresse": "22 All. du Château de Gassion, 57100 Thionville, France",
+    "coordonnees": "None",
+    "departement": ["Thionville_2021_5cm"]
+  },{
+    "adresse": "111 Rte d'Angevillers, 57100 Thionville, France",
+    "coordonnees": "None",
+    "departement": ["Thionville_2021_5cm"],
+    "region": "Région Haute-Garonne"
+  },{
+    "adresse": "61 Rue du Wampich, 57100 Thionville, France",
+    "coordonnees": "None",
+    "departement": ["Thionville_2021_5cm"]
+  },{
+    "adresse": "8 Rue des Landes, 57100 Thionville, France",
+    "coordonnees": "None",
+    "departement": ["Thionville_2021_5cm"]
+  },{
+    "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["Angouleme_2019"]
+  },{
+    "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["Angouleme_2019"]
+  },{
+    "adresse": "Rte de Bordeaux, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["Angouleme_2019"]
+  },{
+    "adresse": "5 Av. Paul Desfarges, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["Angouleme_2019"]
+  },{
+    "adresse": "Rue Paul Vieille, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["Angouleme_2019"]
+  },{
+    "adresse": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis_2018_5cm"]
+  },{
+    "adresse": "106 Bd Jean Mermoz, 93380 Saint-Denis, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis_2018_5cm"]
+  },{
+    "adresse": "111 Av. du Président Wilson, 93210 Saint-Denis, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis_2018_5cm"]
+  },{
+    "adresse": "2 Quai de Saint-Ouen, 93284 Saint-Denis, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis_2018_5cm"]
+  },{
+    "adresse": "72 Av. Romain Rolland, 93200 Saint-Denis, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis_2018_5cm"]
+  },{
+    "adresse": "28 Rue de Sèvres, 92100 Boulogne-Billancourt, France",
+    "coordonnees": "None",
+    "departement": ["Haut-De-Seine_2018_5cm"]
+  },{
+    "adresse": "7 Av. du Général Dwight Eisenhower, 03200 Vichy, France",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+  },{
+    "adresse": "Salcrus, Coren, Saint-Flour, Cantal, Auvergne-Rhône-Alpes, Metropolitan France, 15100, France",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+  },{
+    "adresse": "Le rouge et noir, Rue Francis Poulenc, Zone d'activités Les Blaches, Les Combes, Loriol-sur-Drôme, Die, Drôme, Auvergne-Rhône-Alpes, Metropolitan France, 26270, France",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+  },{
+    "adresse": "91, Chemin des Landes, En Piollier, Saint-Cyr-sur-Menthon, Bourg-en-Bresse, Ain, Auvergne-Rhône-Alpes, Metropolitan France, 01380, France",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+  },{
+    "adresse": "Route de la Thomassière, La Thomassière, Chambon-sur-Cisse, Valencisse, Blois, Loir-et-Cher, Centre-Val de Loire, Metropolitan France, 41190, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Chemin de Candes à Ussé, La Petite Varenne, Huismes, Chinon, Indre-et-Loire, Centre-Val de Loire, Metropolitan France, 37420, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Lieu Dit la Hyarde, La Petite Borde, Lorris, Montargis, Loiret, Centre-Val de Loire, Metropolitan France, 45260, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Route de Bel-Air, Lotissement Le Poirier, Onet-le-Château, Rodez, Aveyron, Occitania, Metropolitan France, 12850, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "25, Rue les Lizes, Marssac-sur-Tarn, Albi, Tarn, Occitania, Metropolitan France, 81150, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Route de la Brante, Douelle, Cahors, Lot, Occitania, Metropolitan France, 46140, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "87, Avenue Charles de Gaulle, Le Cayrel, Millau, Aveyron, Occitania, Metropolitan France, 12100, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Rue de l'Église, Alcapiès, Saint-Jean-d'Alcapiès, Millau, Aveyron, Occitania, Metropolitan France, 12250, France",
+    "coordonnees": "None",
+    "departement": ["Savoie-Enedis"]
   }
 ]
