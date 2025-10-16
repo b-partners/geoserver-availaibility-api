@@ -155,7 +155,7 @@
    {
     "adresse": "79 Rue Mazelle, 57000 Metz",
     "coordonnees": "None",
-    "departement": ["MOSELLE_METZ_METROPOLE_2022_5CM"],
+    "departement": ["MOSELLE_METZ_METROPOLE_2024_5CM"],
     "region": "Grand Est",
      "tiff_ref": "metz_ortho_2024_georef.tif"
   },
