@@ -135,12 +135,6 @@
     "departement": ["MARNES_2018_5cm"],
     "region": "Grand Est"
   },
-   {
-    "adresse": "L'Épine, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51460, France",
-    "coordonnees": "537012,360297",
-    "departement": ["MARNES_2018_5cm"],
-    "region": "Grand Est"
-  },
   {
     "adresse": "Villers-le-Château, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51510, France",
     "coordonnees": "None",
@@ -231,7 +225,7 @@
   {
     "adresse": "18 Rue Marie Et Pierre Curie, 92800 Puteaux",
     "coordonnees": "None",
-    "departement": ["Hauts-de-seine_Département_2023_20cm"],
+    "departement": ["Hauts-De-Seine_5cm"],
     "region": "Île-de-France"
   },
    {
@@ -664,7 +658,7 @@
   },{
     "adresse": "28 Rue de Sèvres, 92100 Boulogne-Billancourt, France",
     "coordonnees": "None",
-    "departement": ["Haut-De-Seine_2018_5cm"]
+    "departement": ["Hauts-De-Seine_5cm"]
   },{
     "adresse": "7 Av. du Général Dwight Eisenhower, 03200 Vichy, France",
     "coordonnees": "None",
@@ -699,10 +693,6 @@
     "departement": ["Savoie-Enedis"]
   },{
     "adresse": "25, Rue les Lizes, Marssac-sur-Tarn, Albi, Tarn, Occitania, Metropolitan France, 81150, France",
-    "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
-  },{
-    "adresse": "Route de la Brante, Douelle, Cahors, Lot, Occitania, Metropolitan France, 46140, France",
     "coordonnees": "None",
     "departement": ["Savoie-Enedis"]
   },{
