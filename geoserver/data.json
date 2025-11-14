@@ -618,23 +618,23 @@
   },{
     "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
     "coordonnees": "None",
-    "departement": ["Angouleme_2019"]
+    "departement": ["CHARENTE_2019_5cm"]
   },{
     "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
     "coordonnees": "None",
-    "departement": ["Angouleme_2019"]
+    "departement": ["CHARENTE_2019_5cm"]
   },{
     "adresse": "Rte de Bordeaux, 16000 Angoulême, France",
     "coordonnees": "None",
-    "departement": ["Angouleme_2019"]
+    "departement": ["CHARENTE_2019_5cm"]
   },{
     "adresse": "5 Av. Paul Desfarges, 16000 Angoulême, France",
     "coordonnees": "None",
-    "departement": ["Angouleme_2019"]
+    "departement": ["CHARENTE_2019_5cm"]
   },{
     "adresse": "Rue Paul Vieille, 16000 Angoulême, France",
     "coordonnees": "None",
-    "departement": ["Angouleme_2019"]
+    "departement": ["CHARENTE_2019_5cm"]
   },{
     "adresse": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis, France",
     "coordonnees": "None",
@@ -703,5 +703,17 @@
     "adresse": "Rue de l'Église, Alcapiès, Saint-Jean-d'Alcapiès, Millau, Aveyron, Occitania, Metropolitan France, 12250, France",
     "coordonnees": "None",
     "departement": ["Savoie-Enedis"]
+  },{
+    "adresse": "Toboggan Reine Jeanne, Vernier, La Buffa, Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06000, France",
+    "coordonnees": "None",
+    "departement": ["COTE-D-AZUR"]
+  },{
+    "adresse": "Chemin des Berges du Var, Saint-Laurent-du-Var, Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06700, France",
+    "coordonnees": "None",
+    "departement": ["COTE-D-AZUR"]
+  },{
+    "adresse": "5, Rue de l'Hôtel de Ville, La Trinité, Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06340, France",
+    "coordonnees": "None",
+    "departement": ["COTE-D-AZUR"]
   }
 ]
