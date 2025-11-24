@@ -222,12 +222,6 @@
     "departement": ["IGN_PHOTO_AERIENNE"],
     "region": "Île-de-France"
   },
-  {
-    "adresse": "18 Rue Marie Et Pierre Curie, 92800 Puteaux",
-    "coordonnees": "None",
-    "departement": ["Hauts-De-Seine_5cm"],
-    "region": "Île-de-France"
-  },
    {
     "adresse": "71 Rue Heurtault, 93300 Aubervilliers",
     "coordonnees": "None",
@@ -549,12 +543,6 @@
     "tiff_ref": "TOULOUSE_ORT_2024_5cm_georef.tif"
   },
   {
-    "adresse": "W44F+7FM Annecy, France",
-    "coordonnees": "None",
-    "departement": ["HAUTE-SAVOIE_2023_5CM"],
-    "region": "Région Auvergne-Rhône-Alpes",
-    "tiff_ref": "HAUTE-SAVOIE_Annecy_2023_5cm_georef.tif"
-  },{
     "adresse": "8QMV+97Q Roclincourt, France",
     "coordonnees": "532423,354102",
     "departement": ["PCRS.LAMB93"],
@@ -655,10 +643,6 @@
     "adresse": "72 Av. Romain Rolland, 93200 Saint-Denis, France",
     "coordonnees": "None",
     "departement": ["Seine-Saint-Denis_2018_5cm"]
-  },{
-    "adresse": "28 Rue de Sèvres, 92100 Boulogne-Billancourt, France",
-    "coordonnees": "None",
-    "departement": ["Hauts-De-Seine_5cm"]
   },{
     "adresse": "7 Av. du Général Dwight Eisenhower, 03200 Vichy, France",
     "coordonnees": "None",
