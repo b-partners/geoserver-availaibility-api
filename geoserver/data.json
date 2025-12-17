@@ -25,12 +25,6 @@
     "departement": ["PCRS.LAMB93"],
     "region": "Ille-et-vilaine",
     "tiff_ref": "rennes-pcrs_georef.tif"
-  },{
-    "adresse": "N 12, La Lande du Breil, Villejean - Beauregard, Quartiers Nord-Ouest, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35921, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Ille-et-vilaine",
-    "tiff_ref": "rennes-pcrs_georef.tif"
   }, {
     "adresse": "Rocade Est, Les Gayeulles, Le Horel, Quartiers Nord-Est, Cesson-Sévigné, Rennes, Ille-et-Vilaine, Brittany, Metropolitan France, 35510, France",
     "coordonnees": "None",
@@ -420,19 +414,7 @@
     "region": "Occitanie",
     "tiff_ref": "carcassonne-pcrs_georef.tif"
   },{
-    "adresse": "D 6161, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Occitanie",
-    "tiff_ref": "carcassonne-pcrs_georef.tif"
-  },{
     "adresse": "Golf de Carcassonne, D 104, Auriac, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Occitanie",
-    "tiff_ref": "carcassonne-pcrs_georef.tif"
-  },{
-    "adresse": "D 6161, Le Viguier, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
     "region": "Occitanie",
@@ -451,12 +433,6 @@
     "tiff_ref": "carcassonne-pcrs_georef.tif"
   },{
     "adresse": "22, Rue André Derain, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Occitanie",
-    "tiff_ref": "carcassonne-pcrs_georef.tif"
-  },{
-    "adresse": "Zone d'activité économique La Ferraudière, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
     "region": "Occitanie",
@@ -579,11 +555,6 @@
     "departement": ["PCRS.LAMB93"],
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
-  },{
-    "adresse": "Rue Pol, Beauquesne, Amiens, Somme, Hauts-de-France, Metropolitan France, 80600, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Région Haut-de-France"
   },{
     "adresse": "2686 Rte de Baziege la Lauragaise, 31670 Labège, France",
     "coordonnees": "None",
