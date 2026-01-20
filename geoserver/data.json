@@ -582,26 +582,6 @@
     "coordonnees": "None",
     "departement": ["Thionville_2021_5cm"]
   },{
-    "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
-    "coordonnees": "None",
-    "departement": ["CHARENTE_2019_5cm"]
-  },{
-    "adresse": "4 Pl. Francis Louvel, 16000 Angoulême, France",
-    "coordonnees": "None",
-    "departement": ["CHARENTE_2019_5cm"]
-  },{
-    "adresse": "Rte de Bordeaux, 16000 Angoulême, France",
-    "coordonnees": "None",
-    "departement": ["CHARENTE_2019_5cm"]
-  },{
-    "adresse": "5 Av. Paul Desfarges, 16000 Angoulême, France",
-    "coordonnees": "None",
-    "departement": ["CHARENTE_2019_5cm"]
-  },{
-    "adresse": "Rue Paul Vieille, 16000 Angoulême, France",
-    "coordonnees": "None",
-    "departement": ["CHARENTE_2019_5cm"]
-  },{
     "adresse": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis, France",
     "coordonnees": "None",
     "departement": ["Seine-Saint-Denis_2018_5cm"]
@@ -681,5 +661,13 @@
     "adresse": "centre commercial Créteil Soleil, 94000 Créteil, France",
     "coordonnees": "None",
     "departement": ["VAL_DE_MARNE_2018_5cm"]
+  },{
+    "adresse": "158056 / -1.187168, 6 Bd Aristide Rondeau, 17000 La Rochelle, France",
+    "coordonnees": "None",
+    "departement": ["CHARENTE_MARITIME_2025_5CM"]
+  },{
+    "adresse": "2 Av. de la Condamine, 30650 Saze, France",
+    "coordonnees": "None",
+    "departement": ["Gard_2025"]
   }
 ]
