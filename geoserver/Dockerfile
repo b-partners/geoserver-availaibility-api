@@ -1,5 +1,13 @@
 FROM public.ecr.aws/lambda/python:3.12
 
+RUN dnf install -y \
+    libxcb \
+    libX11 \
+    libXrender \
+    libXext \
+    libSM \
+    && dnf clean all
+
 WORKDIR ${LAMBDA_TASK_ROOT}
 
 COPY __init__.py app.py address_converter.py check_availability.py tile_downloader.py data.json layer-list.json requirements.txt ./
