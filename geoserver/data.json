@@ -517,6 +517,12 @@
     "departement": ["FINISTERE_2023_5cm"],
     "region": "Région Bretagne",
     "tiff_ref": "FINISTERE_Brest_2023_5cm_georef.tif"
+  },{
+    "adresse": "40 Rue Victor Fenoux, 29200 Brest",
+    "coordonnees": "None",
+    "departement": ["FINISTERE_2024"],
+    "region": "Région Bretagne",
+    "tiff_ref": "FINISTERE_Brest_2023_5cm_georef.tif"
   },
   {
     "adresse": "2 Rue de Cugnaux, 31300 Toulouse",
