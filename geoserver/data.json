@@ -567,18 +567,9 @@
     "departement": ["HAUTE-GARONNE_2022_5cm"],
     "region": "Région Haute-Garonne"
   },{
-    "adresse": "1-2 Rue du Friscaty, 57100 Thionville, France",
-    "coordonnees": "None",
-    "departement": ["Thionville_2021_5cm"]
-  },{
     "adresse": "22 All. du Château de Gassion, 57100 Thionville, France",
     "coordonnees": "None",
     "departement": ["Thionville_2021_5cm"]
-  },{
-    "adresse": "111 Rte d'Angevillers, 57100 Thionville, France",
-    "coordonnees": "None",
-    "departement": ["Thionville_2021_5cm"],
-    "region": "Région Haute-Garonne"
   },{
     "adresse": "61 Rue du Wampich, 57100 Thionville, France",
     "coordonnees": "None",
@@ -602,7 +593,7 @@
   },{
     "adresse": "2 Quai de Saint-Ouen, 93284 Saint-Denis, France",
     "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_2018_5cm"]
+    "departement": ["Seine-saint-denis"]
   },{
     "adresse": "72 Av. Romain Rolland, 93200 Saint-Denis, France",
     "coordonnees": "None",
@@ -675,5 +666,15 @@
     "adresse": "2 Av. de la Condamine, 30650 Saze, France",
     "coordonnees": "None",
     "departement": ["Gard_2025"]
+  },
+  {
+    "adresse": "14 Rue Soleillet, 75020 Paris",
+    "coordonnees": "None",
+    "departement": ["PARIS"]
+  },
+  {
+    "adresse": "52 Av. du Chemin de Mesly, 94000 Créteil",
+    "coordonnees": "None",
+    "departement": ["Val-de-marne"]
   }
 ]
