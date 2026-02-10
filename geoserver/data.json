@@ -181,12 +181,6 @@
     "region": "Grand Sud",
     "tiff_ref": "arles-pcrs_georef.tif"
   },{
-    "adresse": "Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Grand Sud",
-    "tiff_ref": "arles-pcrs_georef.tif"
-  },{
     "adresse": "Getback Escape Game, 14, Rue Joseph Rainard, Site Industriel et Portuaire d'Arles, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
@@ -194,12 +188,6 @@
     "tiff_ref": "arles-pcrs_georef.tif"
   },{
     "adresse": "D 573, Saint-Hippolyte, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Grand Sud",
-    "tiff_ref": "arles-pcrs_georef.tif"
-  },{
-    "adresse": "D 24, Clos Magali, Mas-Thibert, Arles, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13200, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
     "region": "Grand Sud",
@@ -402,12 +390,6 @@
     "region": "Occitanie",
     "tiff_ref": "carcassonne-pcrs_georef.tif"
   },{
-    "adresse": "Cité Ozanam, Montlegun, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Occitanie",
-    "tiff_ref": "carcassonne-pcrs_georef.tif"
-  },{
     "adresse": "Route de Cazilhac, la Barbacanne, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
@@ -421,12 +403,6 @@
     "tiff_ref": "carcassonne-pcrs_georef.tif"
   },{
     "adresse": "D 118, Cité Le Viguier, Mayrevieille, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
-    "coordonnees": "None",
-    "departement": ["PCRS.LAMB93"],
-    "region": "Occitanie",
-    "tiff_ref": "carcassonne-pcrs_georef.tif"
-  },{
-    "adresse": "Route de Limoux, Maquens, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
     "coordonnees": "None",
     "departement": ["PCRS.LAMB93"],
     "region": "Occitanie",
@@ -676,5 +652,13 @@
     "adresse": "52 Av. du Chemin de Mesly, 94000 Créteil",
     "coordonnees": "None",
     "departement": ["Val-de-marne"]
+  },{
+    "adresse": "43.2530212,5.414941199999999",
+    "coordonnees": "540060,384288",
+    "departement": ["Marseille"]
+  },{
+    "adresse": "23 Rue de Berlin 2c, 13127 Vitrolles, France",
+    "coordonnees": "None",
+    "departement": ["Marseille"]
   }
 ]
