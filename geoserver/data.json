@@ -660,5 +660,9 @@
     "adresse": "23 Rue de Berlin 2c, 13127 Vitrolles, France",
     "coordonnees": "None",
     "departement": ["Marseille"]
+  },{
+    "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
+    "coordonnees": "None",
+    "departement": ["Seine-Saint-Denis"]
   }
 ]
