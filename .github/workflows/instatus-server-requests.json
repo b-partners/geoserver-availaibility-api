@@ -1,0 +1,16 @@
+[{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=HAUTE-GARONNE_2022_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=157995.3374654593%2C5402378.066625544%2C158033.5559796019%2C5402416.285139686&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "HAUTE-GARONNE_2022_5cm",
+  "componentId": "cmloxgxi903fy5rhytccodc6o"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=TARN-ET-GARONNE_2020_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=150886.6938349379%2C5467884.5998659395%2C150924.91234908052%2C5467922.818380082&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "TARN-ET-GARONNE_2020_5CM",
+  "componentId": "cmloxkd390rl8kiq0nieeppek"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Ortho_Lisieux_Normandie_2022&format=image%2Fjpeg&width=1024&height=1024&bbox=16204.649996457365%2C6284881.776692047%2C16242.868510599954%2C6284919.995206188&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Ortho_Lisieux_Normandie_2022",
+  "componentId": "cmloxsra40rmskiq01x86hr8k"
+}
+]

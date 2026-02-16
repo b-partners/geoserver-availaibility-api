@@ -1,0 +1,49 @@
+name: Monitor Geoserver HD layers
+
+on:
+  workflow_dispatch:
+#  schedule:
+#    - 'cron': '0 * * * *'
+
+env:
+  INSTATUS_API_KEY: ${{ secrets.INSTATUS_API_KEY }}
+  INSTATUS_PAGE_ID: ${{ secrets.INSTATUS_PAGE_ID }}
+
+jobs:
+  monitor-layers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check GeoServer layers and update Instatus
+        run: |
+          FILE=".github/workflows/instatus-server-requests.json"
+
+          cat $FILE | jq -c '.[]' | while read item; do
+            URL=$(echo $item | jq -r '.url')
+            COMPONENT_ID=$(echo $item | jq -r '.componentId')
+            LAYER=$(echo $item | jq -r '.layer')
+
+            echo "Checking $LAYER..."
+
+            STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}" "$URL")
+
+            if [ "$STATUS_CODE" -eq 200 ]; then
+              COMPONENT_STATUS="OPERATIONAL"
+              DESCRIPTION="Layer $LAYER is available"
+            else
+              COMPONENT_STATUS="PARTIALOUTAGE"
+              DESCRIPTION="Layer $LAYER is unavailable"
+            fi
+
+            echo "Updating component $COMPONENT_ID to $COMPONENT_STATUS"
+
+            curl -X PUT "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+              -H "Authorization: Bearer $INSTATUS_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                    \"status\": \"$COMPONENT_STATUS\",
+                    \"description\": \"$DESCRIPTION\"
+                  }"
+
+          done
