@@ -1,16 +1,211 @@
 [{
   "url": "http://35.181.83.111/geoserver/cite/wms?layers=HAUTE-GARONNE_2022_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=157995.3374654593%2C5402378.066625544%2C158033.5559796019%2C5402416.285139686&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
   "layer": "HAUTE-GARONNE_2022_5cm",
-  "componentId": "cmloxgxi903fy5rhytccodc6o"
+  "componentId": "cmlpgd0s002c0m9vl38e47ryz"
 },
 {
   "url": "http://35.181.83.111/geoserver/cite/wms?layers=TARN-ET-GARONNE_2020_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=150886.6938349379%2C5467884.5998659395%2C150924.91234908052%2C5467922.818380082&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
   "layer": "TARN-ET-GARONNE_2020_5CM",
-  "componentId": "cmloxkd390rl8kiq0nieeppek"
+  "componentId": "cmlpgdjf502fwg5iu34mv8vh0"
 },
 {
   "url": "http://35.181.83.111/geoserver/cite/wms?layers=Ortho_Lisieux_Normandie_2022&format=image%2Fjpeg&width=1024&height=1024&bbox=16204.649996457365%2C6284881.776692047%2C16242.868510599954%2C6284919.995206188&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
   "layer": "Ortho_Lisieux_Normandie_2022",
   "componentId": "cmloxsra40rmskiq01x86hr8k"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=122146.37119971166%2C6350961.587644582%2C122184.58971385422%2C6350999.806158726&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Rouen)",
+  "componentId": "cmlpghke502nl9a3z8xnxvuls"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Haut-de-france&format=image%2Fjpeg&width=1024&height=1024&bbox=339074.65747304185%2C6333113.541539992%2C339112.87598718447%2C6333151.760054135&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Haut-de-france",
+  "componentId": "cmlpgjebj02lg21piunjfu1aw"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=310907.6125499544%2C6504217.829356359%2C310945.831064097%2C6504256.047870503&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Haut-de-france)",
+  "componentId": "cmlpgkm5x02epkyu0f82o0jn9"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=MARNES_2018_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=439780.4422387616%2C6336935.392954254%2C439818.6607529042%2C6336973.611468394&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "MARNES_2018_5CM (Reims)",
+  "componentId": "cmlpglii302ekm9vlc4ra6x1d"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=MARNES_2018_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=475094.349306513%2C6267989.193441024%2C475132.5678206556%2C6268027.411955166&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "MARNES_2018_5CM (Chalons)",
+  "componentId": "cmlpglii302ekm9vlc4ra6x1d"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Thionville_2021_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=685410.8326331754%2C6332196.297200571%2C685449.051147318%2C6332234.515714713&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Thionville_2021_5cm",
+  "componentId": "cmlpgoiok1k5ip2a91v2aw1lc"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=MOSELLE_METZ_METROPOLE_2024_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=688353.6582221547%2C6294436.405227694%2C688391.8767362973%2C6294474.623741836&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "MOSELLE_METZ_METROPOLE_2024_5CM",
+  "componentId": "cmlpgq7ix1jdw13j8mxorhdls"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Meurthe-et-moselle_Grand-Nancy_2023_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=686404.5140008827%2C6220789.328474928%2C686442.7325150253%2C6220827.54698907&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Meurthe-et-moselle_Grand-Nancy_2023_5cm",
+  "componentId": "cmlpgriao1jea13j80t2xw8qv"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Bas-Rhin_2023_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=867713.1450933209%2C6243414.688847339%2C867751.3636074634%2C6243452.907361481&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Bas-Rhin_2023_5cm",
+  "componentId": "cmlpgt9dl1jf413j861f66nfn"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=MANCHE_2021_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=-181881.9088045769%2C6383600.198722354%2C-181843.6902904343%2C6383638.417236495&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "MANCHE_2021_5CM",
+  "componentId": "cmlpguhdr0vs2u10wkybumf9v"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=-175537.63545690727%2C6129638.172244854%2C-175499.41694276466%2C6129676.390758998&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Rennes)",
+  "componentId": "cmlpgvvoa02gqm9vl3qt28due"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=-303722.53189114784%2C6055914.658463801%2C-303684.3133770052%2C6055952.876977944&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Morbihan)",
+  "componentId": "cmlpgxh7k0v6u83csdn4iiw6v"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Eur_Et_Loir_Chartres&format=image%2Fjpeg&width=1024&height=1024&bbox=165600.82177983434%2C6181653.569992917%2C165639.04029397693%2C6181691.788507059&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Eur_Et_Loir_Chartres",
+  "componentId": "cmlpgystv02qn9a3ztx082w61"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PARIS&format=image%2Fjpeg&width=1024&height=1024&bbox=266230.16951726883%2C6252052.073043564%2C266268.38803141145%2C6252090.291557706&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PARIS",
+  "componentId": "cmlpgzs2m0w41kiq00xkcuqky"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Seine-Saint-Denis&format=image%2Fjpeg&width=1024&height=1024&bbox=279568.4309530321%2C6260307.272098363%2C279606.6494671747%2C6260345.490612505&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Seine-Saint-Denis",
+  "componentId": "cmlph0uxr02i8kyu015z3uc22"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Seine-Saint-Denis&format=image%2Fjpeg&width=1024&height=1024&bbox=279568.4309530321%2C6260307.272098363%2C279606.6494671747%2C6260345.490612505&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Seine-Saint-Denis",
+  "componentId": "cmlph0uxr02i8kyu015z3uc22"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Seine-Saint-Denis_2018_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=262446.5366171526%2C6259046.061131657%2C262484.75513129524%2C6259084.2796458&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Seine-Saint-Denis_2018_5cm",
+  "componentId": "cmlph1z9o028ku91u4x2tzz30"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=VAL_DE_MARNE_2018_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=273529.9057185032%2C6237605.474697664%2C273568.1242326458%2C6237643.69321181&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "VAL_DE_MARNE_2018_5cm",
+  "componentId": "cmlph3dh40w4ukiq04p3xjywx"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Loire-Atlantique_Clisson_Sevre_Maine_2020_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=-142440.40220942593%2C5955476.40329708%2C-142402.18369528334%2C5955514.621811222&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Loire-Atlantique_Clisson_Sevre_Maine_2020_5cm",
+  "componentId": "cmlph5pza02qs21pi82in6o9g"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=VENDEE_2025&format=image%2Fjpeg&width=1024&height=1024&bbox=-157460.2782674631%2C5886415.5482414225%2C-157422.0597533205%2C5886453.766755564&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "VENDEE_2025",
+  "componentId": "cmlph72kt02adu91urzmkucz6"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=ILE-DE-RE&format=image%2Fjpeg&width=1024&height=1024&bbox=-171448.2544436503%2C5814564.741653359%2C-171410.03592950775%2C5814602.960167499&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "ILE-DE-RE",
+  "componentId": "cmlph87f602b4u91ust02svtf"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=CHARENTE_MARITIME_2025_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=-131892.0923060716%2C5806080.231513702%2C-131853.873791929%2C5806118.450027845&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "CHARENTE_MARITIME_2025_5CM",
+  "componentId": "cmlph99h30w65kiq07cza31s4"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=INDRE_ET_LOIRE_2024_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=77621.80222359647%2C6005466.219795585%2C77660.02073773908%2C6005504.438309728&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "INDRE_ET_LOIRE_2024_5CM",
+  "componentId": "cmlphb8p11jog13j869fuq587"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=-22854.671457267697%2C5935335.246343936%2C-22816.45294312511%2C5935373.464858078&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Livarot-Pays-d'Auge)",
+  "componentId": "cmlphev0k02to21pit35pbi7o"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=COTE_D_OR_2024_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=561086.0061273363%2C5994650.380293232%2C561124.2246414789%2C5994688.598807375&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "COTE_D_OR_2024_5cm (Dijon)",
+  "componentId": "cmlphgy7s0vb683csf274krdj"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=CHARENTE_2019_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=18230.231246014537%2C5741261.631527874%2C18268.449760157124%2C5741299.850042016&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "CHARENTE_2019_5cm (Vars)",
+  "componentId": "cmlphhwwp02m3kyu04znqw5vl"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=139382.9210780189%2C5753759.085652499%2C139421.1395921615%2C5753797.304166643&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Limoges)",
+  "componentId": "cmlphjcdl02l4m9vl6fdg1iuy"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Auvergne_Rhone_Alpes_PCRS_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=380694.6193743203%2C5800576.76547717%2C380732.8378884629%2C5800614.983991312&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Auvergne_Rhone_Alpes_PCRS_5cm (Vichy)",
+  "componentId": "cmlphk2cd0wf6i65jprrj94kt"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=RHONE_2023_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=537772.7125003574%2C5741758.472211727%2C537810.9310145001%2C5741796.6907258695&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "RHONE_2023_5CM (Lyon)",
+  "componentId": "cmlphlsi402dju91ulp4sstn7"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=RHONE_2018_5CM&format=image%2Fjpeg&width=1024&height=1024&bbox=537772.7125003574%2C5741758.472211727%2C537810.9310145001%2C5741796.6907258695&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "RHONE_2018_5CM (Lyon)",
+  "componentId": "cmlphn4wf0vzuu10we7h3o7zo"
+},
+{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Auvergne_Rhone_Alpes_All_Region_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=546830.5003521509%2C5607649.706085385%2C546868.7188662934%2C5607687.924599528&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Auvergne_Rhone_Alpes_All_Region_5cm (Valence)",
+  "componentId": "cmlpho22y0w04u10wqnmksl6n"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=259924.11468374185%2C5341152.006969119%2C259962.3331978844%2C5341190.225483261&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Carcassonne)",
+  "componentId": "cmlphpea902nykyu07g296vun"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=HERAULT_2020_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=359024.72185547283%2C5363356.9636859605%2C359062.9403696154%2C5363395.182200105&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "HERAULT_2020_5cm",
+  "componentId": "cmlphrdt702ozkyu0rwawmjxy"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Gard_2025&format=image%2Fjpeg&width=1024&height=1024&bbox=521300.53290490207%2C5456571.919679735%2C521338.75141904457%2C5456610.1381938765&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Gard_2025 (Saze)",
+  "componentId": "cmlphs8c802nim9vlmu4x44jr"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=514765.1669865194%2C5403983.244219532%2C514803.385500662%2C5404021.462733675&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (Arles)",
+  "componentId": "cmlphtfr71jw013j82wi1umad"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=Marseille&format=image%2Fjpeg&width=1024&height=1024&bbox=602782.4050568999%2C5350553.761448194%2C602820.6235710426%2C5350591.979962337&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "Marseille",
+  "componentId": "cmlphv3ph02fnu91ue0ijqfhg"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=ALPES-MARITIMES_2020_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=781530.3957017845%2C5396186.667334445%2C781568.6142159272%2C5396224.885848586&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "ALPES-MARITIMES_2020_5cm (Cannes)",
+  "componentId": "cmlphvqop02pvkyu0ewd64svz"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=ALPES-MARITIMES_2024_5cm&format=image%2Fjpeg&width=1024&height=1024&bbox=781530.3957017845%2C5396186.667334445%2C781568.6142159272%2C5396224.885848586&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "ALPES-MARITIMES_2020_5cm (Cannes)",
+  "componentId": "cmlphx9vz02n614oyspfr8o16"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=COTE-D-AZUR&format=image%2Fjpeg&width=1024&height=1024&bbox=808321.5741157389%2C5419996.801645278%2C808359.7926298813%2C5420035.0201594215&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "COTE-D-AZUR",
+  "componentId": "cmlphxqxx02y321pi9vo4g5kg"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=FINISTERE_2024&format=image%2Fjpeg&width=1024&height=1024&bbox=-498063.6763062084%2C6171219.915631989%2C-498025.45779206586%2C6171258.134146133&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "FINISTERE_2024",
+  "componentId": "cmlphz1yn0vg083csjze50bae"
+},{
+  "url": "http://35.181.83.111/geoserver/cite/wms?layers=PCRS&format=image%2Fjpeg&width=1024&height=1024&bbox=-41543.52487299329%2C5357318.438451433%2C-41505.3063588507%2C5357356.656965575&srs=EPSG%3A3857&transparent=true&service=WMS&request=GetMap&version=1.3.0",
+  "layer": "PCRS (PAU)",
+  "componentId": "cmlpi0beb0wdfkiq0ss2q03wl"
 }
 ]
