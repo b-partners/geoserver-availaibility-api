@@ -19,26 +19,35 @@ jobs:
         run: |
           FILE=".github/workflows/instatus-server-requests.json"
 
-          cat $FILE | jq -c '.[]' | while read item; do
-            URL=$(echo $item | jq -r '.url')
-            COMPONENT_ID=$(echo $item | jq -r '.componentId')
-            LAYER=$(echo $item | jq -r '.layer')
+          cat "$FILE" | jq -c '.[]' | while read item; do
+            URL=$(echo "$item" | jq -r '.url')
+            COMPONENT_ID=$(echo "$item" | jq -r '.componentId')
+            LAYER=$(echo "$item" | jq -r '.layer')
 
-            echo "Checking $LAYER..."
+            echo "Checking layer: $LAYER"
 
-            STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}" "$URL")
+            HEADERS=$(mktemp)
+            BODY=$(mktemp)
+          
+            curl -s --max-time 20 \
+              -D "$HEADERS" \
+              -o "$BODY" \
+              "$URL"
 
-            if [ "$STATUS_CODE" -eq 200 ]; then
+            CONTENT_TYPE=$(grep -i "^content-type" "$HEADERS" | awk '{print $2}' | tr -d '\r')
+            MAGIC=$(head -c 4 "$BODY" | xxd -p)
+
+            if [[ "$CONTENT_TYPE" == image/* && ( "$MAGIC" == "ffd8ff"* || "$MAGIC" == "89504e47"* ) ]]; then
               COMPONENT_STATUS="OPERATIONAL"
               DESCRIPTION="Layer $LAYER is available"
             else
               COMPONENT_STATUS="PARTIALOUTAGE"
-              DESCRIPTION="Layer $LAYER is unavailable"
+              DESCRIPTION="Layer $LAYER is not returning a valid image"
             fi
 
-            echo "Updating component $COMPONENT_ID to $COMPONENT_STATUS"
+            echo "Updating component $COMPONENT_ID → $COMPONENT_STATUS"
 
-            curl -X PUT "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+            curl -s -X PUT "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
               -H "Authorization: Bearer $INSTATUS_API_KEY" \
               -H "Content-Type: application/json" \
               -d "{
@@ -46,4 +55,5 @@ jobs:
                     \"description\": \"$DESCRIPTION\"
                   }"
 
+            rm -f "$HEADERS" "$BODY"
           done
