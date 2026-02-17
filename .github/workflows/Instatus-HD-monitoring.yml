@@ -3,93 +3,218 @@ name: Monitor Geoserver HD layers
 on:
   workflow_dispatch:
 #  schedule:
-#    - 'cron': '0 * * * *'
+#    - cron: '0 * * * *'
+
+permissions:
+  contents: write
 
 env:
   INSTATUS_API_KEY: ${{ secrets.INSTATUS_API_KEY }}
   INSTATUS_PAGE_ID: ${{ secrets.INSTATUS_PAGE_ID }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
+  AWS_REGION: eu-west-3
+  S3_BUCKET: instatus-bucket
+  S3_KEY: instatus-server-requests.json
+  FILE: .github/workflows/instatus-server-requests.json
 
 jobs:
   monitor-layers:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick jq bc
 
-      - name: Check GeoServer layers and update Instatus
+      - name: Setup AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4.0.1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Download config from S3
         run: |
           set -e
 
-          FILE=".github/workflows/instatus-server-requests.json"
+          if ! aws s3 cp s3://${{ env.S3_BUCKET }}/${{ env.S3_KEY }} ./config.json; then
+            echo "S3 file not found, using empty config"
+            echo '[]' > ./config.json
+          fi
+
+          if ! jq empty ./config.json; then
+            echo "Invalid JSON in S3, using empty config"
+            echo '[]' > ./config.json
+          fi
+
+          cp ./config.json "${{ env.FILE }}"
+
+          echo "Final file content: ${{ env.FILE }}"
+
+      - name: Monitor layers & manage incidents
+        run: |
+          set -e
 
           if [ ! -f "$FILE" ]; then
             echo "Configuration file not found!"
             exit 1
           fi
 
-          cat "$FILE" | jq -c '.[]' | while read item; do
+          jq -c '.[]' "$FILE" | while read item; do
             URL=$(echo "$item" | jq -r '.url')
             COMPONENT_ID=$(echo "$item" | jq -r '.componentId')
             LAYER=$(echo "$item" | jq -r '.layer')
+            INCIDENT_ID=$(echo "$item" | jq -r '.incidentId')
 
             echo "--------------------------------------"
             echo "Checking layer: $LAYER"
-            echo "URL: $URL"
 
             HEADERS=$(mktemp)
             BODY=$(mktemp)
 
-            curl -s --max-time 30 \
-              -D "$HEADERS" \
-              -o "$BODY" \
-              "$URL"
+            curl -s --max-time 120 -D "$HEADERS" -o "$BODY" "$URL"
 
             HTTP_CODE=$(head -n 1 "$HEADERS" | awk '{print $2}')
             CONTENT_TYPE=$(grep -i "^content-type" "$HEADERS" | awk '{print $2}' | tr -d '\r')
-            MAGIC=$(head -c 4 "$BODY" | xxd -p)
 
             echo "HTTP Code: $HTTP_CODE"
             echo "Content-Type: $CONTENT_TYPE"
-            echo "Magic bytes: $MAGIC"
 
-            COMPONENT_STATUS="PARTIALOUTAGE"
-            DESCRIPTION="Layer $LAYER check failed"
+            # Get component status
+            CURRENT_COMPONENT_STATUS=$(curl -s \
+              "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+              -H "Authorization: Bearer $INSTATUS_API_KEY" \
+              | jq -r '.internalStatus')
 
-            if [[ "$HTTP_CODE" == "200" && "$CONTENT_TYPE" == image/* && ( "$MAGIC" == ffd8ff* || "$MAGIC" == 89504e47* ) ]]; then
+            echo "Current Component status: $CURRENT_COMPONENT_STATUS"
 
-          
-              STDDEV=$(convert "$BODY" -resize 100x100 -colorspace Gray -format "%[standard-deviation]" info: 2>/dev/null || echo "error")
+            # Monitoring logic
+            MONITORING_FAILED=false
 
-              echo "Standard deviation: $STDDEV"
-
-              if [[ "$STDDEV" == "error" ]]; then
-                COMPONENT_STATUS="PARTIALOUTAGE"
-                DESCRIPTION="Layer $LAYER returned unreadable image"
-              else
-                if (( $(echo "$STDDEV < 0.001" | bc -l) )); then
-                  COMPONENT_STATUS="PARTIALOUTAGE"
-                  DESCRIPTION="Layer $LAYER returns blank image"
-                else
-                  COMPONENT_STATUS="OPERATIONAL"
-                  DESCRIPTION="Layer $LAYER is available"
-                fi
-              fi
-
+            if [[ "$HTTP_CODE" != "200" || "$CONTENT_TYPE" != image/* ]]; then
+              MONITORING_FAILED=true
             else
-              DESCRIPTION="Layer $LAYER is not returning a valid image (HTTP $HTTP_CODE)"
+              STDDEV=$(convert "$BODY" -resize 100x100 -colorspace Gray \
+                -format "%[standard-deviation]" info: 2>/dev/null || echo "error")
+
+              if [[ "$STDDEV" == "error" ]] || (( $(echo "$STDDEV < 0.001" | bc -l) )); then
+                MONITORING_FAILED=true
+              fi
             fi
 
-            echo "Updating component $COMPONENT_ID → $COMPONENT_STATUS"
+            echo "Monitoring failed: $MONITORING_FAILED"
 
-            curl -s -X PUT "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
-              -H "Authorization: Bearer $INSTATUS_API_KEY" \
-              -H "Content-Type: application/json" \
-              -d "{
-                    \"status\": \"$COMPONENT_STATUS\",
-                    \"description\": \"$DESCRIPTION\"
-                  }"
+            # ===================================================
+            # CASE 1: KO + OPERATIONAL → CREATE INCIDENT
+            # ===================================================
+            if [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "OPERATIONAL" ]]; then
+              echo "Creating incident..."
+
+              INCIDENT_RESPONSE=$(curl -s -X POST \
+                "https://api.instatus.com/v1/$INSTATUS_PAGE_ID/incidents" \
+                -H "Authorization: Bearer $INSTATUS_API_KEY" \
+                -H "Content-Type: application/json" \
+                -d "{
+                      \"name\": \"Layer unavailable: $LAYER\",
+                      \"message\": \"Layer $LAYER is not returning a valid image (HTTP $HTTP_CODE)\",
+                      \"components\": [\"$COMPONENT_ID\"],
+                      \"status\": \"INVESTIGATING\",
+                      \"notify\": true
+                    }")
+              
+              echo "Updating ${COMPONENT_ID} status to PARTIALOUTAGE"
+              curl -s -X PUT \
+                "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+                -H "Authorization: Bearer $INSTATUS_API_KEY" \
+                -H "Content-Type: application/json" \
+                -d "{
+                      \"description\": \"Layer $LAYER is unavailable\",
+                      \"status\": \"PARTIALOUTAGE\"
+                    }"
+          
+              echo "Component ${COMPONENT_ID} successfully updated to PARTIALOUTAGE"
+              echo "INCIDENT_RESPONSE = $INCIDENT_RESPONSE" 
+
+              NEW_INCIDENT_ID=$(echo "$INCIDENT_RESPONSE" | jq -r '.id')
+
+              echo "Incident created with ID: $NEW_INCIDENT_ID"
+
+              jq --arg cid "$COMPONENT_ID" \
+                 --arg iid "$NEW_INCIDENT_ID" \
+                 'map(if .componentId == $cid then .incidentId = $iid else . end)' \
+                 "$FILE" > tmp.json && mv tmp.json "$FILE"
+
+            # ===================================================
+            # CASE 2: KO + PARTIALOUTAGE → DO NOTHING
+            # ===================================================
+            elif [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" ]]; then
+              echo "Already in PARTIALOUTAGE. No action."
+
+            # ===================================================
+            # CASE 3: OK + PARTIALOUTAGE → RESOLVE
+            # ===================================================
+            elif [[ "$MONITORING_FAILED" = false && \
+                    "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" && \
+                    "$INCIDENT_ID" != "null" ]]; then
+
+              echo "Resolving incident $INCIDENT_ID..."
+
+              STARTED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+              curl -s -X PUT \
+                "https://api.instatus.com/v1/$INSTATUS_PAGE_ID/incidents/$INCIDENT_ID" \
+                -H "Authorization: Bearer $INSTATUS_API_KEY" \
+                -H "Content-Type: application/json" \
+                -d "{
+                      \"name\": \"Layer available: $LAYER\",
+                      \"started\": \"$STARTED\",
+                      \"components\": [\"$COMPONENT_ID\"],
+                      \"status\": \"RESOLVED\",
+                      \"notify\": true
+                    }"
+          
+              echo "Updating ${COMPONENT_ID} status to OPERATIONAL"
+              curl -s -X PUT \
+                "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+                -H "Authorization: Bearer $INSTATUS_API_KEY" \
+                -H "Content-Type: application/json" \
+                -d "{
+                    \"description\": \"Layer $LAYER is available\",
+                    \"status\": \"OPERATIONAL\"
+                    }"
+
+              if jq empty "$FILE" 2>/dev/null; then
+                  jq --arg cid "$COMPONENT_ID" \
+                     'map(if .componentId == $cid then .incidentId = null else . end)' \
+                     "$FILE" > tmp.json && mv tmp.json "$FILE"
+              else
+                  echo "Error: Invalid JSON in $FILE"
+                  exit 1
+              fi
+
+              echo "Incident resolved."
+
+            else
+              echo "No action required."
+            fi
 
             rm -f "$HEADERS" "$BODY"
           done
+
+      - name: Upload config to S3
+        run: |
+          # Sauvegarder la config actuelle
+          cp ${{ env.FILE }} ./config-upload.json
+          
+          # Upload vers S3
+          aws s3 cp ./config-upload.json s3://${{ env.S3_BUCKET }}/${{ env.S3_KEY }} \
+            --cache-control no-cache \
+            --metadata "updated=$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          
+          echo "Configuration uploaded to S3"
+
+
