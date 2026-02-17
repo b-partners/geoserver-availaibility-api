@@ -15,34 +15,70 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Check GeoServer layers and update Instatus
         run: |
+          set -e
+
           FILE=".github/workflows/instatus-server-requests.json"
+
+          if [ ! -f "$FILE" ]; then
+            echo "Configuration file not found!"
+            exit 1
+          fi
 
           cat "$FILE" | jq -c '.[]' | while read item; do
             URL=$(echo "$item" | jq -r '.url')
             COMPONENT_ID=$(echo "$item" | jq -r '.componentId')
             LAYER=$(echo "$item" | jq -r '.layer')
 
+            echo "--------------------------------------"
             echo "Checking layer: $LAYER"
+            echo "URL: $URL"
 
             HEADERS=$(mktemp)
             BODY=$(mktemp)
-          
-            curl -s --max-time 20 \
+
+            curl -s --max-time 30 \
               -D "$HEADERS" \
               -o "$BODY" \
               "$URL"
 
+            HTTP_CODE=$(head -n 1 "$HEADERS" | awk '{print $2}')
             CONTENT_TYPE=$(grep -i "^content-type" "$HEADERS" | awk '{print $2}' | tr -d '\r')
             MAGIC=$(head -c 4 "$BODY" | xxd -p)
 
-            if [[ "$CONTENT_TYPE" == image/* && ( "$MAGIC" == "ffd8ff"* || "$MAGIC" == "89504e47"* ) ]]; then
-              COMPONENT_STATUS="OPERATIONAL"
-              DESCRIPTION="Layer $LAYER is available"
+            echo "HTTP Code: $HTTP_CODE"
+            echo "Content-Type: $CONTENT_TYPE"
+            echo "Magic bytes: $MAGIC"
+
+            COMPONENT_STATUS="PARTIALOUTAGE"
+            DESCRIPTION="Layer $LAYER check failed"
+
+            if [[ "$HTTP_CODE" == "200" && "$CONTENT_TYPE" == image/* && ( "$MAGIC" == ffd8ff* || "$MAGIC" == 89504e47* ) ]]; then
+
+          
+              STDDEV=$(convert "$BODY" -resize 100x100 -colorspace Gray -format "%[standard-deviation]" info: 2>/dev/null || echo "error")
+
+              echo "Standard deviation: $STDDEV"
+
+              if [[ "$STDDEV" == "error" ]]; then
+                COMPONENT_STATUS="PARTIALOUTAGE"
+                DESCRIPTION="Layer $LAYER returned unreadable image"
+              else
+                if (( $(echo "$STDDEV < 0.001" | bc -l) )); then
+                  COMPONENT_STATUS="PARTIALOUTAGE"
+                  DESCRIPTION="Layer $LAYER returns blank image"
+                else
+                  COMPONENT_STATUS="OPERATIONAL"
+                  DESCRIPTION="Layer $LAYER is available"
+                fi
+              fi
+
             else
-              COMPONENT_STATUS="PARTIALOUTAGE"
-              DESCRIPTION="Layer $LAYER is not returning a valid image"
+              DESCRIPTION="Layer $LAYER is not returning a valid image (HTTP $HTTP_CODE)"
             fi
 
             echo "Updating component $COMPONENT_ID → $COMPONENT_STATUS"
