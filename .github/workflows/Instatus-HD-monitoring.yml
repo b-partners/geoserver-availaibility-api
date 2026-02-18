@@ -65,6 +65,17 @@ jobs:
             exit 1
           fi
 
+          echo "Fetching all components status once..."
+          COMPONENTS_JSON=$(curl -s \
+            "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components?page=1&per_page=50" \
+            -H "Authorization: Bearer $INSTATUS_API_KEY")
+          
+          if ! echo "$COMPONENTS_JSON" | jq empty 2>/dev/null; then
+            echo "Failed to fetch components or invalid JSON."
+            echo "$COMPONENTS_JSON"
+            exit 1
+          fi
+
           jq -c '.[]' "$FILE" | while read item; do
             URL=$(echo "$item" | jq -r '.url')
             COMPONENT_ID=$(echo "$item" | jq -r '.componentId')
@@ -85,15 +96,12 @@ jobs:
             echo "HTTP Code: $HTTP_CODE"
             echo "Content-Type: $CONTENT_TYPE"
 
-            # Get component status
-            CURRENT_COMPONENT_STATUS=$(curl -s \
-              "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
-              -H "Authorization: Bearer $INSTATUS_API_KEY" \
-              | jq -r '.internalStatus')
-
+            # Search component status
+            CURRENT_COMPONENT_STATUS=$(echo "$COMPONENTS_JSON" | \
+              jq -r ".[] | select(.id == \"$COMPONENT_ID\") | .internalStatus")
+          
             echo "Current Component status: $CURRENT_COMPONENT_STATUS"
 
-            # Monitoring logic
             MONITORING_FAILED=false
 
             if [[ "$HTTP_CODE" != "200" || "$CONTENT_TYPE" != image/* ]]; then
@@ -126,38 +134,32 @@ jobs:
                       \"status\": \"INVESTIGATING\",
                       \"notify\": true
                     }")
-              
-              echo "Updating ${COMPONENT_ID} status to PARTIALOUTAGE"
-              curl -s -X PUT \
-                "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
-                -H "Authorization: Bearer $INSTATUS_API_KEY" \
-                -H "Content-Type: application/json" \
-                -d "{
-                      \"description\": \"Layer $LAYER is unavailable\",
-                      \"status\": \"PARTIALOUTAGE\"
-                    }"
-          
-              echo "Component ${COMPONENT_ID} successfully updated to PARTIALOUTAGE"
-              echo "INCIDENT_RESPONSE = $INCIDENT_RESPONSE" 
 
-              NEW_INCIDENT_ID=$(echo "$INCIDENT_RESPONSE" | jq -r '.id')
+              if echo "$INCIDENT_RESPONSE" | jq empty 2>/dev/null; then
+                NEW_INCIDENT_ID=$(echo "$INCIDENT_RESPONSE" | jq -r '.id')
 
-              echo "Incident created with ID: $NEW_INCIDENT_ID"
+                echo "Updating ${COMPONENT_ID} status to PARTIALOUTAGE"
+                curl -s -X PUT \
+                  "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
+                  -H "Authorization: Bearer $INSTATUS_API_KEY" \
+                  -H "Content-Type: application/json" \
+                  -d "{
+                        \"description\": \"Layer $LAYER is unavailable\",
+                        \"status\": \"PARTIALOUTAGE\"
+                      }"
 
-              jq --arg cid "$COMPONENT_ID" \
-                 --arg iid "$NEW_INCIDENT_ID" \
-                 'map(if .componentId == $cid then .incidentId = $iid else . end)' \
-                 "$FILE" > tmp.json && mv tmp.json "$FILE"
+                jq --arg cid "$COMPONENT_ID" \
+                   --arg iid "$NEW_INCIDENT_ID" \
+                   'map(if .componentId == $cid then .incidentId = $iid else . end)' \
+                   "$FILE" > tmp.json && mv tmp.json "$FILE"
+              else
+                echo "Invalid JSON from incident creation:"
+                echo "$INCIDENT_RESPONSE"
+              fi
 
-            # ===================================================
-            # CASE 2: KO + PARTIALOUTAGE → DO NOTHING
-            # ===================================================
             elif [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" ]]; then
               echo "Already in PARTIALOUTAGE. No action."
 
-            # ===================================================
-            # CASE 3: OK + PARTIALOUTAGE → RESOLVE
-            # ===================================================
             elif [[ "$MONITORING_FAILED" = false && \
                     "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" && \
                     "$INCIDENT_ID" != "null" ]]; then
@@ -165,6 +167,7 @@ jobs:
               echo "Resolving incident $INCIDENT_ID..."
 
               STARTED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
               curl -s -X PUT \
                 "https://api.instatus.com/v1/$INSTATUS_PAGE_ID/incidents/$INCIDENT_ID" \
                 -H "Authorization: Bearer $INSTATUS_API_KEY" \
@@ -176,8 +179,7 @@ jobs:
                       \"status\": \"RESOLVED\",
                       \"notify\": true
                     }"
-          
-              echo "Updating ${COMPONENT_ID} status to OPERATIONAL"
+
               curl -s -X PUT \
                 "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
                 -H "Authorization: Bearer $INSTATUS_API_KEY" \
@@ -187,14 +189,9 @@ jobs:
                     \"status\": \"OPERATIONAL\"
                     }"
 
-              if jq empty "$FILE" 2>/dev/null; then
-                  jq --arg cid "$COMPONENT_ID" \
-                     'map(if .componentId == $cid then .incidentId = null else . end)' \
-                     "$FILE" > tmp.json && mv tmp.json "$FILE"
-              else
-                  echo "Error: Invalid JSON in $FILE"
-                  exit 1
-              fi
+              jq --arg cid "$COMPONENT_ID" \
+                 'map(if .componentId == $cid then .incidentId = null else . end)' \
+                 "$FILE" > tmp.json && mv tmp.json "$FILE"
 
               echo "Incident resolved."
 
@@ -203,7 +200,7 @@ jobs:
             fi
 
             rm -f "$HEADERS" "$BODY"
-          done
+          done   
 
       - name: Upload config to S3
         run: |
@@ -216,5 +213,3 @@ jobs:
             --metadata "updated=$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
           
           echo "Configuration uploaded to S3"
-
-
