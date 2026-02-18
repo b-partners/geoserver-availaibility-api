@@ -2,8 +2,8 @@ name: Monitor Geoserver HD layers
 
 on:
   workflow_dispatch:
-#  schedule:
-#    - cron: '0 * * * *'
+  schedule:
+    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -120,6 +120,7 @@ jobs:
             # ===================================================
             # CASE 1: KO + OPERATIONAL → CREATE INCIDENT
             # ===================================================
+          
             if [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "OPERATIONAL" ]]; then
               echo "Creating incident..."
 
@@ -157,9 +158,17 @@ jobs:
                 echo "$INCIDENT_RESPONSE"
               fi
 
+            # ========================================================================
+            # CASE 2: KO + PARTIALOUTAGE → INCIDENT IN PROGRESS, DO NOT CREATE ANYMORE
+            # ========================================================================
+          
             elif [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" ]]; then
               echo "Already in PARTIALOUTAGE. No action."
 
+            # ========================================================================
+            # CASE 3: OK + PARTIALOUTAGE → MONITORING OK, RESOLVE CURRENT INCIDENT
+            # ========================================================================
+          
             elif [[ "$MONITORING_FAILED" = false && \
                     "$CURRENT_COMPONENT_STATUS" = "PARTIALOUTAGE" && \
                     "$INCIDENT_ID" != "null" ]]; then
