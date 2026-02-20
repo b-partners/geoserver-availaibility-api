@@ -19,7 +19,7 @@ env:
   FILE: .github/workflows/instatus-server-requests.json
 
 jobs:
-  monitor-layers:
+  monitor-HD-layers:
     runs-on: ubuntu-latest
 
     steps:
@@ -38,7 +38,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Download config from S3
+      - name: Download HD config from S3
         run: |
           set -e
 
@@ -56,7 +56,7 @@ jobs:
 
           echo "Final file content: ${{ env.FILE }}"
 
-      - name: Monitor layers & manage incidents
+      - name: Monitor HD layers and manage incidents
         run: |
           set -e
 
@@ -122,7 +122,7 @@ jobs:
             # ===================================================
           
             if [[ "$MONITORING_FAILED" = true && "$CURRENT_COMPONENT_STATUS" = "OPERATIONAL" ]]; then
-              echo "Creating incident..."
+              echo "Creating incident and updating component status ..."
 
               INCIDENT_RESPONSE=$(curl -s -X POST \
                 "https://api.instatus.com/v1/$INSTATUS_PAGE_ID/incidents" \
@@ -133,21 +133,15 @@ jobs:
                       \"message\": \"Layer $LAYER is not returning a valid image (HTTP $HTTP_CODE)\",
                       \"components\": [\"$COMPONENT_ID\"],
                       \"status\": \"INVESTIGATING\",
+                      \"statuses\": {
+                        \"id\": \"$COMPONENT_ID\",
+                        \"status\": \"PARTIALOUTAGE\"
+                      },
                       \"notify\": true
                     }")
 
               if echo "$INCIDENT_RESPONSE" | jq empty 2>/dev/null; then
                 NEW_INCIDENT_ID=$(echo "$INCIDENT_RESPONSE" | jq -r '.id')
-
-                echo "Updating ${COMPONENT_ID} status to PARTIALOUTAGE"
-                curl -s -X PUT \
-                  "https://api.instatus.com/v2/$INSTATUS_PAGE_ID/components/$COMPONENT_ID" \
-                  -H "Authorization: Bearer $INSTATUS_API_KEY" \
-                  -H "Content-Type: application/json" \
-                  -d "{
-                        \"description\": \"Layer $LAYER is unavailable\",
-                        \"status\": \"PARTIALOUTAGE\"
-                      }"
 
                 jq --arg cid "$COMPONENT_ID" \
                    --arg iid "$NEW_INCIDENT_ID" \
@@ -186,7 +180,8 @@ jobs:
                       \"started\": \"$STARTED\",
                       \"components\": [\"$COMPONENT_ID\"],
                       \"status\": \"RESOLVED\",
-                      \"notify\": true
+                      \"impact\": \"NONE\",
+                      \"notify\": true,
                     }"
 
               curl -s -X PUT \
