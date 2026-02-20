@@ -176,12 +176,16 @@ jobs:
                 -H "Authorization: Bearer $INSTATUS_API_KEY" \
                 -H "Content-Type: application/json" \
                 -d "{
-                      \"name\": \"Layer available: $LAYER\",
+                      \"message\": \"Layer available: $LAYER\",
                       \"started\": \"$STARTED\",
                       \"components\": [\"$COMPONENT_ID\"],
                       \"status\": \"RESOLVED\",
                       \"impact\": \"NONE\",
                       \"notify\": true,
+                      \"statuses\": {
+                        \"id\": \"$COMPONENT_ID\",
+                        \"status\": \"OPERATIONAL\"
+                      }
                     }"
 
               curl -s -X PUT \
