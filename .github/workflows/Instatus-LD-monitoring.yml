@@ -2,8 +2,6 @@ name: Monitor Geoserver LD layers
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'
 
 permissions:
   contents: write
