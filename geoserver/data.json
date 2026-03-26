@@ -664,5 +664,17 @@
     "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
     "coordonnees": "None",
     "departement": ["Seine-Saint-Denis"]
+  },{
+    "adresse": "Pl. de l'Hôtel de ville, 16000 Angoulême, France",
+    "coordonnees": "None",
+    "departement": ["CHARENTE_2025"]
+  },{
+    "adresse": "7 Bd des Pyrénées, 40000 Mont-de-Marsan, France",
+    "coordonnees": "None",
+    "departement": ["LANDES_2025"]
+  },{
+    "adresse": "15 Rue Jean Renaud Dandicolle, 33000 Bordeaux, France",
+    "coordonnees": "None",
+    "departement": ["GIRONDE_2025"]
   }
 ]
