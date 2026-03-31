@@ -186,13 +186,6 @@
     "tiff_ref": "GIRONDE_Bruges_2023_5cm_georef.tif"
   },
   {
-    "adresse": "8 Avenue du Général de Gaulle, 33520 Bruges",
-    "coordonnees": "522490,377716",
-    "departement": ["GIRONDE_2023_5cm"],
-    "region": "Nouvelle-Aquitaine",
-    "tiff_ref": "Bordeaux_ORTHO2020_georef.tif"
-  },
-  {
     "adresse": "7 Rue de l'Aubisque, 64000 Pau",
     "coordonnees": "None",
     "departement": ["Pyrénées-Atlantique-Pau_Metropole_2024_5cm"],
@@ -300,13 +293,13 @@
   {
     "adresse": "8QMV+97Q Roclincourt, France",
     "coordonnees": "532423,354102",
-    "departement": ["PCRS"],
+    "departement": ["Haut-de-france"],
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
   },{
     "adresse": "8X7C+56P Raye-sur-Authie, France",
     "coordonnees": "530027, 354196",
-    "departement": ["PCRS"],
+    "departement": ["Haut-de-france"],
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
   },{
@@ -457,7 +450,7 @@
     "coordonnees": "None",
     "departement": ["LANDES_2025"]
   },{
-    "adresse": "15 Rue Jean Renaud Dandicolle, 33000 Bordeaux, France",
+    "adresse": "45.3384,0.4435",
     "coordonnees": "None",
     "departement": ["GIRONDE_2025"]
   },{
@@ -465,5 +458,25 @@
     "coordonnees": "None",
     "departement": ["PCRS"],
     "tiff_ref": "lot-departement.tif"
+  },
+  {
+    "adresse": "47.46315240,-0.71060353",
+    "coordonnees": "None",
+    "departement": ["MAINE-ET-LOIRE"]
+  },
+  {
+    "adresse": "46.2194790,6.2238254",
+    "coordonnees": "None",
+    "departement": ["SUISSE"]
+  },
+  {
+    "adresse": "49.64297027908714, 4.63089638034991",
+    "coordonnees": "None",
+    "departement": ["ARDENNES"]
+  },
+  {
+    "adresse": "44 Bisserweg, 1238 Grund Luxembourg",
+    "coordonnees": "None",
+    "departement": ["LUXEMBOURG"]
   }
 ]
