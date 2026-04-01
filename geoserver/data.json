@@ -478,5 +478,20 @@
     "adresse": "44 Bisserweg, 1238 Grund Luxembourg",
     "coordonnees": "None",
     "departement": ["LUXEMBOURG"]
+  },
+  {
+    "adresse": "4 Rue René Descartes, 67000 Strasbourg",
+    "coordonnees": "None",
+    "departement": ["Bas-Rhin_2025_5cm"]
+  },
+  {
+    "adresse": "25 Rue Golbéry, 68000 Colmar",
+    "coordonnees": "None",
+    "departement": ["Haut-Rhin_2024_5cm"]
+  },
+  {
+    "adresse": "16 Rue de Vendée, 68800 Vieux-Thann",
+    "coordonnees": "None",
+    "departement": ["Haut-Rhin_2024_5cm"]
   }
 ]
