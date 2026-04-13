@@ -439,20 +439,18 @@
   {
     "adresse": "14 Rue Soleillet, 75020 Paris",
     "coordonnees": "None",
-    "departement": ["PARIS"]
+    "departement": ["PARIS"],
+    "tiff_ref": "paris.tif"
   },
   {
     "adresse": "52 Av. du Chemin de Mesly, 94000 Créteil",
     "coordonnees": "None",
     "departement": ["Val-de-marne"]
   },{
-    "adresse": "43.2530212,5.414941199999999",
-    "coordonnees": "540060,384288",
-    "departement": ["Marseille"]
-  },{
     "adresse": "23 Rue de Berlin 2c, 13127 Vitrolles, France",
     "coordonnees": "None",
-    "departement": ["Marseille"]
+    "departement": ["Marseille"],
+    "tiff_ref": "aix-en-provence.tif"
   },{
     "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
     "coordonnees": "None",
@@ -483,7 +481,8 @@
   {
     "adresse": "46.2194790,6.2238254",
     "coordonnees": "None",
-    "departement": ["SUISSE"]
+    "departement": ["SUISSE"],
+    "tiff_ref": "suisse.tif"
   },
   {
     "adresse": "49.64297027908714, 4.63089638034991",
