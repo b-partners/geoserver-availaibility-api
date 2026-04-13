@@ -148,18 +148,6 @@
     "tiff_ref": "parthenay-poitiers-pcrs_georef.tif"
   },
   {
-    "adresse": "Bd de Beaublanc, 87100 Limoges, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine"
-  },
-  {
-    "adresse": "19 Rue Bernard Palissy, 87000 Limoges, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Nouvelle-Aquitaine"
-  },
-  {
     "adresse": "4 Chez Brard, 16330 Vars, France",
     "coordonnees": "524765,374065",
     "departement": ["CHARENTE_2019_5cm"],
@@ -308,25 +296,14 @@
     "coordonnees": "None",
     "departement": ["Thionville_2021_5cm"]
   },{
-    "adresse": "1 Rue de la Légion d'Honneur, 93200 Saint-Denis, France",
-    "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_2018_5cm"]
-  },{
     "adresse": "106 Bd Jean Mermoz, 93380 Saint-Denis, France",
     "coordonnees": "None",
     "departement": ["Seine-Saint-Denis_2018_5cm"]
   },{
-    "adresse": "111 Av. du Président Wilson, 93210 Saint-Denis, France",
+    "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
     "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_2018_5cm"]
-  },{
-    "adresse": "2 Quai de Saint-Ouen, 93284 Saint-Denis, France",
-    "coordonnees": "None",
-    "departement": ["Seine-saint-denis"]
-  },{
-    "adresse": "72 Av. Romain Rolland, 93200 Saint-Denis, France",
-    "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_2018_5cm"]
+    "departement": ["Seine-saint-denis"],
+    "tiff_ref": "seine-saint-denis.tif"
   },{
     "adresse": "7 Av. du Général Dwight Eisenhower, 03200 Vichy, France",
     "coordonnees": "None",
@@ -414,7 +391,8 @@
   },{
     "adresse": "centre commercial Créteil Soleil, 94000 Créteil, France",
     "coordonnees": "None",
-    "departement": ["VAL_DE_MARNE_2018_5cm"]
+    "departement": ["VAL_DE_MARNE_2018_5cm"],
+    "tiff_ref": "val-de-marne.tif"
   },{
     "adresse": "158056 / -1.187168, 6 Bd Aristide Rondeau, 17000 La Rochelle, France",
     "coordonnees": "None",
@@ -433,7 +411,8 @@
   {
     "adresse": "52 Av. du Chemin de Mesly, 94000 Créteil",
     "coordonnees": "None",
-    "departement": ["Val-de-marne"]
+    "departement": ["Val-de-marne"],
+    "tiff_ref": "val-de-marne.tif"
   },{
     "adresse": "23 Rue de Berlin 2c, 13127 Vitrolles, France",
     "coordonnees": "None",
@@ -480,7 +459,8 @@
   {
     "adresse": "44 Bisserweg, 1238 Grund Luxembourg",
     "coordonnees": "None",
-    "departement": ["LUXEMBOURG"]
+    "departement": ["LUXEMBOURG"],
+    "tiff_ref": "luxembourg.tif"
   },
   {
     "adresse": "4 Rue René Descartes, 67000 Strasbourg",
