@@ -42,24 +42,24 @@
   {
     "adresse": "14 Place du Forum, 51100 Reims",
     "coordonnees": "536038,358963",
-    "departement": ["MARNES_2018_5cm"],
+    "departement": ["MARNE_2018_5cm"],
     "region": "Grand Est"
   },
    {
     "adresse": "Autoroute des Anglais, Cauroy-lès-Hermonville, Reims, Marne, Grand Est, Metropolitan France, 51220, France",
     "coordonnees": "None",
-    "departement": ["MARNES_2018_5cm"],
+    "departement": ["MARNE_2018_5cm"],
     "region": "Grand Est"
   },
   {
     "adresse": "Villers-le-Château, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51510, France",
     "coordonnees": "None",
-    "departement": ["MARNES_2018_5cm"],
+    "departement": ["MARNE_2018_5cm"],
     "region": "Grand Est"
   },{
     "adresse": "D 1, Marson, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51240, France",
     "coordonnees": "None",
-    "departement": ["MARNES_2018_5cm"],
+    "departement": ["MARNE_2018_5cm"],
     "region": "Grand Est"
   },
    {
@@ -354,19 +354,23 @@
   },{
     "adresse": "7 Av. du Général Dwight Eisenhower, 03200 Vichy, France",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref":  "allier_auvergne_rhone_alpes.tif"
   },{
     "adresse": "Salcrus, Coren, Saint-Flour, Cantal, Auvergne-Rhône-Alpes, Metropolitan France, 15100, France",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "cantal_auvergne_rhone_alpes.tif"
   },{
     "adresse": "Le rouge et noir, Rue Francis Poulenc, Zone d'activités Les Blaches, Les Combes, Loriol-sur-Drôme, Die, Drôme, Auvergne-Rhône-Alpes, Metropolitan France, 26270, France",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "drome_auvergne_rhone_alpes.tif"
   },{
     "adresse": "91, Chemin des Landes, En Piollier, Saint-Cyr-sur-Menthon, Bourg-en-Bresse, Ain, Auvergne-Rhône-Alpes, Metropolitan France, 01380, France",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "ain_auvergne_rhone_alpes.tif"
   },{
     "adresse": "Route de la Thomassière, La Thomassière, Chambon-sur-Cisse, Valencisse, Blois, Loir-et-Cher, Centre-Val de Loire, Metropolitan France, 41190, France",
     "coordonnees": "None",
