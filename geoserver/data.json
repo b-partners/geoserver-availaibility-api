@@ -129,18 +129,6 @@
     "tiff_ref": "Ortho_Lisieux_Normandie_2022_georef.tif"
   },
   {
-    "adresse": "76000 Rouen, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Normandie"
-  },
-  {
-    "adresse": "Route Forestière des Coteaux, Canteleu, Rouen, Seine-Maritime, Normandy, Metropolitan France, 76380, France",
-    "coordonnees": "None",
-    "departement": ["PCRS"],
-    "region": "Normandie"
-  },
-  {
     "adresse": "110 Rue de la Duché, 50100 Cherbourg-en-Cotentin, France",
     "coordonnees": "None",
     "departement": ["MANCHE_2021_5CM"],
@@ -392,12 +380,12 @@
   },{
     "adresse": "6 Rue Jean-Louis Grivaz, 74000 Annecy",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "departement": ["HAUTE-SAVOIE_2025_5CM"],
     "tiff_ref": "haute-savoie_auvergne_rhone_alpes.tif"
   },{
     "adresse": "1 Pl. de la Libération, 73000 Chambéry",
     "coordonnees": "None",
-    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "departement": ["SAVOIE_2024_5CM"],
     "tiff_ref": "savoie_auvergne_rhone_alpes.tif"
   },{
     "adresse": "Route de Bel-Air, Lotissement Le Poirier, Onet-le-Château, Rodez, Aveyron, Occitania, Metropolitan France, 12850, France",
