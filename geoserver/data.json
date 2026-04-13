@@ -303,18 +303,6 @@
     "region": "Région Haut-de-France",
     "tiff_ref": "haut-de-france_georef.tif"
   },{
-    "adresse": "935M+55G Berneuil-en-Bray, France",
-    "coordonnees": "530354, 358509",
-    "departement": ["Haut-de-france"],
-    "region": "Région Haut-de-France",
-    "tiff_ref": "haut-de-france_georef.tif"
-  },{
-    "adresse": "3FC7+H9J Honnechy, France",
-    "coordonnees": "533160, 358579",
-    "departement": ["Haut-de-france"],
-    "region": "Région Haut-de-France",
-    "tiff_ref": "haut-de-france_georef.tif"
-  },{
     "adresse": "2686 Rte de Baziege la Lauragaise, 31670 Labège, France",
     "coordonnees": "None",
     "departement": ["HAUTE-GARONNE_2022_5cm"],
@@ -372,23 +360,47 @@
     "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
     "tiff_ref": "ain_auvergne_rhone_alpes.tif"
   },{
-    "adresse": "Route de la Thomassière, La Thomassière, Chambon-sur-Cisse, Valencisse, Blois, Loir-et-Cher, Centre-Val de Loire, Metropolitan France, 41190, France",
+    "adresse": "3 Rue Jean Baussier, 07200 Aubenas",
     "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "ardeche_auvergne_rhone_alpes.tif"
   },{
-    "adresse": "Chemin de Candes à Ussé, La Petite Varenne, Huismes, Chinon, Indre-et-Loire, Centre-Val de Loire, Metropolitan France, 37420, France",
+    "adresse": "1 Rue du Château, 43320 Chaspuzac",
     "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "haute-loire_auvergne_rhone_alpes.tif"
   },{
-    "adresse": "Lieu Dit la Hyarde, La Petite Borde, Lorris, Montargis, Loiret, Centre-Val de Loire, Metropolitan France, 45260, France",
+    "adresse": "Le Bourg, 42130 Saint-Étienne-le-Molard",
     "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "loire_auvergne_rhone_alpes.tif"
+  },{
+    "adresse": "9 Bis Rue du Phalanstère 9 B, 38000 Grenoble",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "isere_auvergne_rhone_alpes.tif"
+  },{
+    "adresse": "Pl. de la Victoire, 63000 Clermont-Ferrand",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "puy-de-dome_auvergne_rhone_alpes.tif"
+  },{
+    "adresse": "WHCC+73Q Val d'Oingt",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "rhone_auvergne_rhone_alpes.tif"
+  },{
+    "adresse": "6 Rue Jean-Louis Grivaz, 74000 Annecy",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "haute-savoie_auvergne_rhone_alpes.tif"
+  },{
+    "adresse": "1 Pl. de la Libération, 73000 Chambéry",
+    "coordonnees": "None",
+    "departement": ["Auvergne_Rhone_Alpes_PCRS_5cm"],
+    "tiff_ref": "savoie_auvergne_rhone_alpes.tif"
   },{
     "adresse": "Route de Bel-Air, Lotissement Le Poirier, Onet-le-Château, Rodez, Aveyron, Occitania, Metropolitan France, 12850, France",
-    "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
-  },{
-    "adresse": "25, Rue les Lizes, Marssac-sur-Tarn, Albi, Tarn, Occitania, Metropolitan France, 81150, France",
     "coordonnees": "None",
     "departement": ["Savoie-Enedis"]
   },{
