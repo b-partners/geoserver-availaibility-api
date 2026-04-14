@@ -429,11 +429,13 @@
   },{
     "adresse": "7 Bd des Pyrénées, 40000 Mont-de-Marsan, France",
     "coordonnees": "None",
-    "departement": ["LANDES_2025"]
+    "departement": ["LANDES_2025"],
+    "tiff_ref": "landes.tif"
   },{
     "adresse": "45.3384,0.4435",
     "coordonnees": "None",
-    "departement": ["GIRONDE_2025"]
+    "departement": ["GIRONDE_2025"],
+    "tiff_ref": "GIRONDE_Bruges_2023_5cm_georef.tif"
   },{
     "adresse": "44.398,2.047",
     "coordonnees": "None",
@@ -443,7 +445,8 @@
   {
     "adresse": "47.46315240,-0.71060353",
     "coordonnees": "None",
-    "departement": ["MAINE-ET-LOIRE"]
+    "departement": ["MAINE-ET-LOIRE"],
+    "tiff_ref": "maine-et-loire.tif"
   },
   {
     "adresse": "46.2194790,6.2238254",
@@ -454,7 +457,8 @@
   {
     "adresse": "49.64297027908714, 4.63089638034991",
     "coordonnees": "None",
-    "departement": ["ARDENNES"]
+    "departement": ["ARDENNES"],
+    "tiff_ref": "ardennes.tif"
   },
   {
     "adresse": "44 Bisserweg, 1238 Grund Luxembourg",
@@ -465,7 +469,8 @@
   {
     "adresse": "4 Rue René Descartes, 67000 Strasbourg",
     "coordonnees": "None",
-    "departement": ["Bas-Rhin_2025_5cm"]
+    "departement": ["Bas-Rhin_2025_5cm"],
+    "tiff_ref": "bas-rhin.tif"
   },
   {
     "adresse": "25 Rue Golbéry, 68000 Colmar",
