@@ -172,17 +172,8 @@
     "adresse": "97J6+5RH Boujan-sur-Libron, France",
     "coordonnees": "None",
     "departement": ["HERAULT_2020_5cm"],
-    "region": "Occitanie"
-  },{
-    "adresse": "Pole Sud Immobilier, 103, Boulevard de la Liberté, Béziers, Hérault, Occitania, Metropolitan France, 34500, France",
-    "coordonnees": "None",
-    "departement": ["HERAULT_2020_5cm"],
-    "region": "Occitanie"
-  },{
-    "adresse": "MECS Jean Gailhac, 38, Boulevard d'Angleterre, Rebaut le Bas, Béziers, Hérault, Occitania, Metropolitan France, 34500, France",
-    "coordonnees": "None",
-    "departement": ["HERAULT_2020_5cm"],
-    "region": "Occitanie"
+    "region": "Occitanie",
+    "tiff_ref": "herault.tif"
   },
    {
     "adresse": "Le Bois de Serres, Carcassonne, Aude, Occitania, Metropolitan France, 11000, France",
@@ -298,7 +289,8 @@
   },{
     "adresse": "106 Bd Jean Mermoz, 93380 Saint-Denis, France",
     "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis_2018_5cm"]
+    "departement": ["Seine-Saint-Denis_2018_5cm"],
+   "tiff_ref": "seine-saint-denis.tif"
   },{
     "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
     "coordonnees": "None",
@@ -365,29 +357,10 @@
     "departement": ["SAVOIE_2024_5CM"],
     "tiff_ref": "savoie_auvergne_rhone_alpes.tif"
   },{
-    "adresse": "Route de Bel-Air, Lotissement Le Poirier, Onet-le-Château, Rodez, Aveyron, Occitania, Metropolitan France, 12850, France",
-    "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
-  },{
-    "adresse": "87, Avenue Charles de Gaulle, Le Cayrel, Millau, Aveyron, Occitania, Metropolitan France, 12100, France",
-    "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
-  },{
-    "adresse": "Rue de l'Église, Alcapiès, Saint-Jean-d'Alcapiès, Millau, Aveyron, Occitania, Metropolitan France, 12250, France",
-    "coordonnees": "None",
-    "departement": ["Savoie-Enedis"]
-  },{
     "adresse": "Toboggan Reine Jeanne, Vernier, La Buffa, Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06000, France",
     "coordonnees": "None",
-    "departement": ["COTE-D-AZUR"]
-  },{
-    "adresse": "Chemin des Berges du Var, Saint-Laurent-du-Var, Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06700, France",
-    "coordonnees": "None",
-    "departement": ["COTE-D-AZUR"]
-  },{
-    "adresse": "5, Rue de l'Hôtel de Ville, La Trinité, Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06340, France",
-    "coordonnees": "None",
-    "departement": ["COTE-D-AZUR"]
+    "departement": ["COTE-D-AZUR"],
+    "tiff_ref": "alpes-maritimes.tif"
   },{
     "adresse": "centre commercial Créteil Soleil, 94000 Créteil, France",
     "coordonnees": "None",
@@ -421,7 +394,8 @@
   },{
     "adresse": "11 Avenue du Colonel Fabien 2c 9319, Livry-Gargan, France",
     "coordonnees": "None",
-    "departement": ["Seine-Saint-Denis"]
+    "departement": ["Seine-Saint-Denis"],
+    "tiff_ref": "seine-saint-denis.tif"
   },{
     "adresse": "Pl. de l'Hôtel de ville, 16000 Angoulême, France",
     "coordonnees": "None",
