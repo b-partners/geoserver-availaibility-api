@@ -283,10 +283,6 @@
     "coordonnees": "None",
     "departement": ["Thionville_2021_5cm"]
   },{
-    "adresse": "8 Rue des Landes, 57100 Thionville, France",
-    "coordonnees": "None",
-    "departement": ["Thionville_2021_5cm"]
-  },{
     "adresse": "106 Bd Jean Mermoz, 93380 Saint-Denis, France",
     "coordonnees": "None",
     "departement": ["Seine-Saint-Denis_2018_5cm"],
@@ -455,5 +451,23 @@
     "adresse": "16 Rue de Vendée, 68800 Vieux-Thann",
     "coordonnees": "None",
     "departement": ["Haut-Rhin_2024_5cm"]
+  },
+  {
+    "adresse": "48.93783199,-0.83843949",
+    "coordonnees": "None",
+    "departement": ["Calvados"],
+    "tiff_ref": "calvados.tif"
+  },
+  {
+    "adresse": "47.6455988, 6.8557953",
+    "coordonnees": "None",
+    "departement": ["Grand_Belfort"],
+    "tiff_ref":  "territoire-de-grand-belfort.tif"
+  },
+  {
+    "adresse": "Rue Notre Dame, 84100 Orange",
+    "coordonnees": "None",
+    "departement": ["Vaucluse"],
+    "tiff_ref":  "Vaucluse.tif"
   }
 ]
