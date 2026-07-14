@@ -69,7 +69,7 @@ def check_geoserver_availability(page=1, page_size=5, max_workers=10, dataset='d
         for department in paginated_data:
             address = department["adresse"]
             coordinates = department["coordonnees"]
-            z = 20
+            z = 19
             for layer in department["departement"]:
                 futures.append(
                     executor.submit(
