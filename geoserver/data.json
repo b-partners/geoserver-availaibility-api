@@ -45,21 +45,22 @@
     "departement": ["MARNE_2026"],
     "region": "Grand Est"
   },
-   {
-    "adresse": "Autoroute des Anglais, Cauroy-lès-Hermonville, Reims, Marne, Grand Est, Metropolitan France, 51220, France",
-    "coordonnees": "None",
-    "departement": ["MARNE_2026"],
-    "region": "Grand Est"
-  },
   {
     "adresse": "Villers-le-Château, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51510, France",
     "coordonnees": "None",
     "departement": ["MARNE_2026"],
     "region": "Grand Est"
-  },{
-    "adresse": "D 1, Marson, Châlons-en-Champagne, Marne, Grand Est, Metropolitan France, 51240, France",
+  },
+  {
+    "adresse": "48.9565751,4.3634281",
     "coordonnees": "None",
     "departement": ["MARNE_2026"],
+    "region": "Grand Est"
+  },
+  {
+    "adresse": "49.2520805,4.0267258",
+    "coordonnees": "None",
+    "departement": ["MARNE_REIMS_2026"],
     "region": "Grand Est"
   },
    {
